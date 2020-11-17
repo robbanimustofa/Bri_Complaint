@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import LoginCustomer from "./page/login_Customer";
+import LoginCustomerService from "./page/login_CustomerService";
+import LoginSupervisor from "./page/login_Supervisor";
+import "./App.css";
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="padding-lr-20 body">
+        <Fragment>
+          <Route path="/logincs" component={LoginCustomerService} exact />
+          <Route path="/" component={LoginCustomer} exact />
+          <Route path="/loginspv" component={LoginSupervisor} exact />
+        </Fragment>
+      </div>
+    </BrowserRouter>
   );
 }
 

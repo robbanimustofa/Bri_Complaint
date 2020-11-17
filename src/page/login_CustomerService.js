@@ -1,13 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
-function login_Customer() {
-  const linkStyle = {
-    color: "black",
-  };
-
+function login_CustomerService() {
   return (
     <div>
       {/* navigation */}
@@ -17,6 +11,7 @@ function login_Customer() {
 
       {/* Main */}
       <div className="container-login m-t-60">
+        <div className="text-center">Login Customer Service (CS)</div>
         <Form className="m-t-30">
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -37,22 +32,16 @@ function login_Customer() {
           </div>
 
           <div className="text-center">
-            <Link style={linkStyle}>
-              <div>
-                Don't have an account?<span className="color-1f0">Signup</span>{" "}
-                here
-              </div>
-            </Link>
-            <Link style={linkStyle} to="/logincs">
-              <div>
-                Customer Service <span className="color-1f0">Log in</span> here
-              </div>
-            </Link>
-            <Link to="/loginspv" style={linkStyle}>
-              <div>
-                Supervisor <span className="color-1f0">Log in</span> here
-              </div>
-            </Link>
+            <div>
+              Don't have an account?<span className="color-1f0">Signup</span>{" "}
+              here
+            </div>
+            <div>
+              Customer Service <span className="color-1f0">Log in</span> here
+            </div>
+            <div>
+              Supervisor <span className="color-1f0">Log in</span> here
+            </div>
           </div>
         </Form>
       </div>
@@ -60,4 +49,4 @@ function login_Customer() {
   );
 }
 
-export default login_Customer;
+export default login_CustomerService;
