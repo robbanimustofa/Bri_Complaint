@@ -19,12 +19,13 @@
 
 /* header */
 
-.font-57{
+.font-57 {
   font-size: 57px;
+  color: black;
 }
 
-.font-goldman{
-    font-family: "Goldman";
+.font-goldman {
+  font-family: "Goldman";
 }
 
 /* end of header */
