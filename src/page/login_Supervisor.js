@@ -35,6 +35,11 @@ function login_Supervisor() {
               <Button variant="primary" size="lg" className="btn-large button-color-394">
                 Login
               </Button>
+              <Link to="/dashboardspv" style={linkStyle}>
+                <div>
+                  Customer Service <span className="color-1f0">Login</span> here
+                </div>
+              </Link>
             </div>
 
             <div className="text-center">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Logo from "../briwhite.svg"
+import Logo from "../assets/icons/briwhite.svg"
 
 function footer() {
   return (
