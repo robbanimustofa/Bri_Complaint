@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  padding: 20px;
+}
+
+.body {
+  font-family: "Inter-Medium", "Inter", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+.padding-lr-20{
+  padding: 0px 20px;
+}
+
+
+/* header */
+
+.font-57{
+  font-size: 57px;
+}
+
+.font-goldman{
+    font-family: "Goldman";
+}
+
+/* end of header */
+
+.footer{
+  background-color: #004394;
+  padding: 20px 20px;
+  color: white;
+}
+
+.container-login{
+    padding: 20px 20px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.98);
+    background-color: #dbe1de;
+    border-radius: 16px;
+    /* margin: 0px 750px; */
+    width: 460px;
+    height: 563px;
+}
+
+.signup {
+  overflow: visible;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.98);
+  background-color: #DBE1DE;
+  border-radius: 16px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-retno {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+}
+
+.form-group-retno {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 20px;
+margin-right: 20px;
+width: fit-content;
+}
+
+.centering-content{
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-large{
+  padding: 10px 50px;
+  font-size: 16px;
+}
+
+.m-t-30{
+  margin-top: 30px;
+}
+
+.m-t-35{
+  margin-top: 35px;
+}
+
+.m-t-60{
+  margin-top: 60px;
+}
+
+.m-b-35{
+  margin-bottom: 35px;
+}
+
+.color-1f0{
+  color: #1431F0;
+}
+
+.color-394{
+  color: #004394;
+}
+
+.button-color-394{
+  background-color: #004394;
+}
+
+/* Retno */
+
+
+
+
+h1 {
+    font-family: "Goldman", serif;
+    color: #000000;
+    font-size: 57px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+  margin: 20px;
+  justify-content: center;
+}
+
+
+
+.btn {
+  margin: 20px;
+}
