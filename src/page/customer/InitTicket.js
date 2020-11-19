@@ -5,9 +5,9 @@ import { Form, Button } from 'react-bootstrap'
 class InitTicket extends Component {
     render() {
         return (
-            <div className="container">
+            <div style={{margin:"50px"}}>
                 <Navbar />
-                <Form>
+                <Form className="container">
                     <Form.Group>
                         <Form.Label>Title</Form.Label>
                         <Form.Control type="text" required/>
