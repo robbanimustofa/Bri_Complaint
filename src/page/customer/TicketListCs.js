@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 class TicketListCs extends Component {
     render() {
         return(
-            <div className="container">
+            <div style={{margin:"50px"}}>
                 <Navbar/>
                 <button className="btn btn-primary">Create New Ticket</button>
                 <Table>
