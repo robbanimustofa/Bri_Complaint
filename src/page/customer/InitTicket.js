@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Navbar from './Navbar'
 import { Form, Button } from 'react-bootstrap'
+import Footer from '../component/Footer'
 
 class InitTicket extends Component {
     render() {
@@ -51,6 +52,8 @@ class InitTicket extends Component {
                         </Button>
                     </div>
                 </Form>
+
+                <Footer />
             </div>
         );
     }
