@@ -3,8 +3,9 @@ import LoginCustomer from "./page/login_Customer";
 import LoginCustomerService from "./page/login_CustomerService";
 import LoginSupervisor from "./page/login_Supervisor";
 import SignupCustomer from "./page/signupCustomer";
-import DashboardSpv from "./page/spv/Dashboard_Spv"
-import Navbar from './page/customer/Navbar';
+import DashboardSpv from "./page/spv/Dashboard_Spv";
+import Dashboard_CustomerService from "./page/customer_service/Dashboard_CustomerService";
+// import Navbar from './page/customer/Navbar';
 // import TicketListCs from './page/customer/TicketListCs';
 import FooterWeb from "./component/footer"
 // import AddCSAccount from './page/addCSAccount';
@@ -14,7 +15,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      {/*<Navbar/>*/}
       <div className="padding-lr-20 body">
         {/* <AddCSAccount /> */}
         <Fragment>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/loginspv" component={LoginSupervisor} exact />
           <Route path="/signupcustomer" component={SignupCustomer} exact />
           <Route path="/dashboardspv" component={DashboardSpv} exact />
+            <Route path="/dashboardcs" component={Dashboard_CustomerService} exact />
         </Fragment>
       </div>
       <FooterWeb/>

@@ -1,11 +1,11 @@
 import React from "react";
-import {Button, Table} from "react-bootstrap";
-import NavbarSpv from "./Navbar_Spv"
+import { Button, Table } from "react-bootstrap";
+import NavbarCustomerService from "./Navbar_CustomerService"
 
-function Dashboard_Spv() {
+function Dashboard_CustomerService() {
     return (
         <div className="">
-            <NavbarSpv/>
+            <NavbarCustomerService/>
             <div>
                 <Button variant="primary" size="lg" className="btn-large button-color-394">
                     Get Ticket
@@ -40,4 +40,4 @@ function Dashboard_Spv() {
     );
 }
 
-export default Dashboard_Spv;
+export default Dashboard_CustomerService;

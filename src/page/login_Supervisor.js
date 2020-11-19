@@ -32,13 +32,10 @@ function login_Supervisor() {
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
             <div className="text-center m-t-35 m-b-35">
-              <Button variant="primary" size="lg" className="btn-large button-color-394">
-                Login
-              </Button>
-              <Link to="/dashboardspv" style={linkStyle}>
-                <div>
-                  Customer Service <span className="color-1f0">Login</span> here
-                </div>
+              <Link to="/dashboardspv" style={linkStyle} onClick={showalertsuccess}>
+                <Button variant="primary" size="lg" className="btn-large button-color-394">
+                  Login
+                </Button>
               </Link>
             </div>
 
@@ -59,6 +56,10 @@ function login_Supervisor() {
       </div>
     </div>
   );
+}
+
+function showalertsuccess(){
+  alert("Anda Berhasil Login!!");
 }
 
 export default login_Supervisor;

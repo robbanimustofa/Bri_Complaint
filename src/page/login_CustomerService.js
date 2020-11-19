@@ -31,9 +31,11 @@ function login_CustomerService() {
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
             <div className="text-center m-t-35 m-b-35">
-              <Button variant="primary" size="lg" className="btn-large button-color-394">
-                Login
-              </Button>
+              <Link to="/dashboardcs" style={linkStyle} onClick={showalertsuccess}>
+                <Button variant="primary" size="lg" className="btn-large button-color-394">
+                  Login
+                </Button>
+              </Link>
             </div>
 
             <div className="text-center">
@@ -55,6 +57,10 @@ function login_CustomerService() {
       </div>
     </div>
   );
+}
+
+function showalertsuccess(){
+  alert("Anda Berhasil Login!!");
 }
 
 export default login_CustomerService;
