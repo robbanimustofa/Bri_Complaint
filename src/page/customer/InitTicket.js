@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
 import { Form, Button } from 'react-bootstrap'
-import Footer from '../component/Footer'
 
 class InitTicket extends Component {
     render() {
@@ -24,7 +23,7 @@ class InitTicket extends Component {
                             <option>Others</option>
                         </Form.Control>
                     </Form.Group>
-                   
+
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Detail issue</Form.Label>
                         <Form.Control as="textarea" rows={3} required />
@@ -52,8 +51,6 @@ class InitTicket extends Component {
                         </Button>
                     </div>
                 </Form>
-
-                <Footer />
             </div>
         );
     }
