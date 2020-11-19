@@ -26,6 +26,47 @@ class TicketListCs extends Component {
                             <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
                             <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
                         </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>mm/dd/yy 00.00.00</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>#123123</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>ATM saya ketelen anak</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
+                        </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>mm/dd/yy 00.00.00</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>#123123</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>ATM saya ketelen anak</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
+                        </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>mm/dd/yy 00.00.00</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>#123123</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>ATM saya ketelen anak</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
+                        </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>mm/dd/yy 00.00.00</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>#123123</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>ATM saya ketelen anak</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
+                        </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>mm/dd/yy 00.00.00</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>#123123</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>ATM saya ketelen anak</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
+                        </tr><tr>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>mm/dd/yy 00.00.00</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>#123123</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>ATM saya ketelen anak</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>complicated</td>
+                            <td style={{ textAlign: "center", border: "solid 10px white" }}>******</td>
+                        </tr>
                     </tbody>
                 </Table>
             </div>
