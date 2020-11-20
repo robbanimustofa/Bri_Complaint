@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
-import LoginCustomer from "./page/login_Customer";
-import LoginCustomerService from "./page/login_CustomerService";
-import LoginSupervisor from "./page/login_Supervisor";
-import SignupCustomer from "./page/signupCustomer";
+import LoginCustomer from "./page/LoginCustomer";
+import LoginCustomerService from "./page/LoginCustomerService";
+import LoginSupervisor from "./page/LoginSupervisor";
+import SignupCustomer from "./page/SignupCustomer";
 import DashboardSpv from "./page/spv/Dashboard_Spv";
-import Dashboard_CustomerService from "./page/customer_service/Dashboard_CustomerService";
+import DashboardCustomerService from "./page/customer_service/DashboardCustomerService";
 // import Navbar from './page/customer/Navbar';
 // import TicketListCs from './page/customer/TicketListCs';
-import FooterWeb from "./component/footer"
+import FooterWeb from "./component/Footer"
 // import AddCSAccount from './page/addCSAccount';
 import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/loginspv" component={LoginSupervisor} exact />
           <Route path="/signupcustomer" component={SignupCustomer} exact />
           <Route path="/dashboardspv" component={DashboardSpv} exact />
-            <Route path="/dashboardcs" component={Dashboard_CustomerService} exact />
+            <Route path="/dashboardcs" component={DashboardCustomerService} exact />
         </Fragment>
       </div>
       <FooterWeb/>

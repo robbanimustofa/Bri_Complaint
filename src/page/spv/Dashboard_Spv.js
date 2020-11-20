@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Table} from "react-bootstrap";
-import NavbarSpv from "./Navbar_Spv"
+import NavbarSpv from "./NavbarSpv"
 
 function Dashboard_Spv() {
     return (

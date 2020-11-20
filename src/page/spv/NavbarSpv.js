@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import {Button} from "react-bootstrap";
 
 
-const Navbar_CustomerService = () => {
+const NavbarSpv = () => {
     const linkStyle = {
         color: "black",
     };
     return(
-        <div className="navbar d-flex">
+        <div className="navbar d-flex ">
             <div className="">
-                <h1 className="navbar-brand font-goldman font-57">BRI Complaint | CS</h1>
+                <h1 className="navbar-brand font-goldman font-57">BRI Complaint | SPV</h1>
             </div>
             <div id={'button_nav'}>
                 <ul className="nav justify-content-end">
@@ -29,7 +29,14 @@ const Navbar_CustomerService = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/logincs" style={linkStyle} onClick={test1}>
+                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
+                            <Button variant="primary" size="lg" className="btn-large">
+                                CS List
+                            </Button>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
                             <Button variant="danger" size="lg" className="btn-large">
                                 Logout
                             </Button>
@@ -45,4 +52,4 @@ function test1() {
     alert("Anda Berhasil logout");
 }
 
-export default Navbar_CustomerService;
+export default NavbarSpv;

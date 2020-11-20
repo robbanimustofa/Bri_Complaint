@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Table } from "react-bootstrap";
-import NavbarCustomerService from "./Navbar_CustomerService"
+import NavbarCustomerService from "./NavbarCustomerService"
 
-function Dashboard_CustomerService() {
+function DashboardCustomerService() {
     return (
         <div className="">
             <NavbarCustomerService/>
@@ -40,4 +40,4 @@ function Dashboard_CustomerService() {
     );
 }
 
-export default Dashboard_CustomerService;
+export default DashboardCustomerService;

@@ -1,12 +1,30 @@
-import React from "react";
+import React, {useEffect } from "react";
 import "../App.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import axios from 'axios';
 
-function login_Customer() {
+function LoginCustomer() {
   const linkStyle = {
     color: "black",
   };
+
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState("");
+
+
+  // const postLogin = async () => {
+  //   const response =await axios.post("https://b0947247554d.ngrok.io/api/customer/login").then.catch((err) => console.log("error: ", err));
+  //   console.log('Response : ',email);
+  //   if(response && response.data) setEmail(response.data);
+  // };
+
+
+  useEffect(()=> {
+      // postLogin();
+  }, []);
+
+
 
   return (
     <div>
@@ -63,4 +81,7 @@ function login_Customer() {
   );
 }
 
-export default login_Customer;
+
+
+
+export default LoginCustomer;
