@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Table } from "react-bootstrap";
 import Navbar from './Navbar';
 
-class TicketListCs extends Component {
+class DashboardCustomer extends Component {
     render() {
         return(
             <div style={{margin:"50px"}}>
@@ -74,4 +74,4 @@ class TicketListCs extends Component {
     }
 }
 
-export default TicketListCs;
+export default DashboardCustomer;

@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Footer from './component/Footer';
-import TicketListCs from './page/customer/TicketListCs';
+import DashboardCustomer from './page/customer/DashboardCustomer';
 import background from './background.jpg'
 
 function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${background})`, backgroundSize:"cover" }}>
-        <TicketListCs />
+        <DashboardCustomer />
         <Footer />
     </div>
   );
