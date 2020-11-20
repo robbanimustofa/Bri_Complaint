@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/customer/InitTicket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/AddCSAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/AddCSAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomerService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginSupervisor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginSupervisor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/SignupCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/SignupCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/TicketListCs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/customer_service/MyTicketCs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
