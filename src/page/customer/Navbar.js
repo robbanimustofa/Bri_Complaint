@@ -1,19 +1,22 @@
 import React from 'react'
 
 const Navbar = () => {
-    return(
+    return (
         <div className="navbar">
-            <div className="container">
+            <div>
                 <h1 className="navbar-brand font-goldman font-57">BRI Complaint</h1>
+            </div>
+            <div>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
                         <div className="nav-link active btn btn-danger bg-btn">Log out</div>
                     </li>
+                    <li className="nav nav-item">
+                        <a href="#" className="nav nav-link active btn btn-danger bg-btn">Log out</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    ) 
-};
-
-
+    )
+}
 export default Navbar;

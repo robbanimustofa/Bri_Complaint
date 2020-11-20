@@ -5,6 +5,8 @@ import LoginSupervisor from "./page/LoginSupervisor";
 import SignupCustomer from "./page/SignupCustomer";
 import DashboardSpv from "./page/spv/Dashboard_Spv";
 import DashboardCustomerService from "./page/customer_service/DashboardCustomerService";
+import InitTicket from './page/customer/InitTicket'
+import background from './background.jpg'
 // import Navbar from './page/customer/Navbar';
 // import TicketListCs from './page/customer/TicketListCs';
 import FooterWeb from "./component/Footer"
@@ -13,23 +15,24 @@ import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <BrowserRouter>
-      {/*<Navbar/>*/}
-      <div className="padding-lr-20 body">
-        {/* <AddCSAccount /> */}
-        <Fragment>
-          <Route path="/logincs" component={LoginCustomerService} exact />
-          <Route path="/" component={LoginCustomer} exact />
-          <Route path="/loginspv" component={LoginSupervisor} exact />
-          <Route path="/signupcustomer" component={SignupCustomer} exact />
-          <Route path="/dashboardspv" component={DashboardSpv} exact />
-            <Route path="/dashboardcs" component={DashboardCustomerService} exact />
-        </Fragment>
-      </div>
-      <FooterWeb/>
-    </BrowserRouter>
-  )
+    return (
+        <BrowserRouter>
+            {/*<Navbar/>*/}
+            <div className="padding-lr-20 body background"
+                 style={{backgroundImage: `url(${background})`, backgroundSize: "cover"}}>
+                {/* <AddCSAccount /> */}
+                <Fragment>
+                    <Route path="/logincs" component={LoginCustomerService} exact/>
+                    <Route path="/" component={LoginCustomer} exact/>
+                    <Route path="/loginspv" component={LoginSupervisor} exact/>
+                    <Route path="/signupcustomer" component={SignupCustomer} exact/>
+                    <Route path="/dashboardspv" component={DashboardSpv} exact/>
+                    <Route path="/dashboardcs" component={DashboardCustomerService} exact/>
+                </Fragment>
+            </div>
+            <FooterWeb/>
+        </BrowserRouter>
+    )
 }
 
 export default App;
