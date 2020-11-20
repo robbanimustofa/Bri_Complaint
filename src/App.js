@@ -6,7 +6,7 @@ import background from './background.jpg'
 
 function App() {
   return (
-    <div className="App background" style={{ backgroundImage: `url(${background})`, backgroundRepeat:"no-repeat"}}>
+    <div className="App background" style={{ backgroundImage: `url(${background})`, backgroundSize:"cover"}}>
         <InitTicket />
         <Footer />
     </div>
