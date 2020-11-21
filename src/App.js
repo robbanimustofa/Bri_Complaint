@@ -12,7 +12,11 @@ import background from './background.jpg'
 import FooterWeb from "./component/Footer"
 // import AddCSAccount from './page/addCSAccount';
 import "./App.css";
+import "./animate.css";
 import { BrowserRouter, Route } from "react-router-dom";
+import ReplyForm from './page/spv/ReplyForm'
+// import ReplyForm from './page/customer_service/ReplyForm'
+// import CsList from './page/spv/CsList'
 
 function App() {
     return (

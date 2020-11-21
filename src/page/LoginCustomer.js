@@ -1,4 +1,4 @@
-import React, {useEffect } from "react";
+import React from "react";
 import "../App.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -8,23 +8,6 @@ function LoginCustomer() {
   const linkStyle = {
     color: "black",
   };
-
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState("");
-
-
-  // const postLogin = async () => {
-  //   const response =await axios.post("https://b0947247554d.ngrok.io/api/customer/login").then.catch((err) => console.log("error: ", err));
-  //   console.log('Response : ',email);
-  //   if(response && response.data) setEmail(response.data);
-  // };
-
-
-  useEffect(()=> {
-      // postLogin();
-  }, []);
-
-
 
   return (
     <div>
@@ -39,7 +22,7 @@ function LoginCustomer() {
           <Form className="m-t-30">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email"/>
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -47,7 +30,7 @@ function LoginCustomer() {
 
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password"/>
             </Form.Group>
             <div className="text-center m-t-35 m-b-35">
               <Button variant="primary" size="lg" className="btn-large button-color-394">
