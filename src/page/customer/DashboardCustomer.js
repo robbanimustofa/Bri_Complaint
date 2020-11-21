@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Table } from "react-bootstrap";
-import Navbar from './Navbar';
+import NavbarCustomer from './NavbarCustomer';
 
 class DashboardCustomer extends Component {
     render() {
         return(
             <div style={{margin:"50px"}}>
-                <Navbar/>
+                <NavbarCustomer/>
                 <button className="btn btn-primary">Create New Ticket</button>
                 <Table>
                     <thead>

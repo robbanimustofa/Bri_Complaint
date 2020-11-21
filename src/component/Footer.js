@@ -5,22 +5,11 @@ import Logo from "../assets/icons/briwhite.svg";
 function Footer() {
     return (
         <footer className="footer fixed-bottom">
-            <div className="d-flex justify-content-center">
-                <div>
-                    <p>Copyright @2020 Group 08 for Digitalent KOMINFO</p>
-                </div>
-                <div className="d-flex justify-content-end" style={{ paddingLeft: "0px", paddingRight: "0px", textAlign: 'end' }} xs={2}>
-                    <img src={Logo} style={{ marginRight: '20px' }} alt="" />
-                </div>
+            <div className='row remove-m-lr'>
+                <div className='col-4'></div>
+                <div className='col-4 text-center remove-padding-lr'>Copyright @2020 Group 08 for Digitalent KOMINFO</div>
+                <div className='col-4 remove-padding-lr text-right'><img src={Logo} alt="" /></div>
             </div>
-            
-            {/* <Row style={{ marginLeft: "0px", marginRight: "0px" }}>
-                <Col xs={5}></Col>
-                <Col style={{ paddingLeft: "0px", paddingRight: "0px" }} xs={5}>Copyright @2020 Group 08 for Digitalent KOMINFO</Col>
-                <Col style={{ paddingLeft: "0px", paddingRight: "0px", textAlign: 'end'}} xs={2}>
-                    <img src={Logo} style={{marginRight:'20px'}} alt="" />
-                </Col>
-            </Row> */}
         </footer>
     );
 }
