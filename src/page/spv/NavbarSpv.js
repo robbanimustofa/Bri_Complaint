@@ -1,46 +1,37 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 
 const NavbarSpv = () => {
     const linkStyle = {
         color: "black",
     };
-    return(
-        <div className="navbar d-flex ">
+    return (
+        <div className="navbar d-flex justify-content-between">
             <div className="">
                 <h1 className="navbar-brand font-goldman font-57">BRI Complaint | SPV</h1>
             </div>
             <div id={'button_nav'}>
-                <ul className="nav justify-content-end">
+                <ul className="nav">
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="lg" className="btn-large">
+                            <Button variant="primary" size="md" className="btn-md">
                                 Ticket List
                             </Button>
-                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="lg" className="btn-large">
+                            <Button variant="primary" size="md" className="btn-md">
                                 My Ticket
                             </Button>
-                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="lg" className="btn-large">
+                            <Button variant="primary" size="md" className="btn-md">
                                 CS List
                             </Button>
-                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
-                            <Button variant="danger" size="lg" className="btn-large">
+                            <Button variant="danger" size="md" className="btn-md">
                                 Logout
                             </Button>
-                        </Link>
                     </li>
                 </ul>
             </div>
