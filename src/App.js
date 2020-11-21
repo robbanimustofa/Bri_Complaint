@@ -12,6 +12,7 @@ import background from './background.jpg'
 import FooterWeb from "./component/Footer"
 // import AddCSAccount from './page/addCSAccount';
 import "./App.css";
+import "./animate.css";
 import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {

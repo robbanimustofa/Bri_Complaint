@@ -10,6 +10,7 @@ const SignupCustomer = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(false);
+  const [showDanger, setShowDanger] = useState(false);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -21,6 +22,8 @@ const SignupCustomer = () => {
       password !== ""
     ) {
       setShow(true);
+    }else{
+      setShowDanger(true);
     }
   };
 
@@ -31,12 +34,26 @@ const SignupCustomer = () => {
   return (
     <div className="">
       <div className="font-57 font-goldman color-394">BRI Complaint</div>
+      {/*{showDanger === true ? (*/}
+      {/*    <Alert variant="danger" style={{animation-name:'fadeinDown'}} onClose={() => setShowDanger(false)} dismissible>*/}
+      {/*      Kamu M Salah!*/}
+      {/*    </Alert>*/}
+      {/*):(*/}
+      {/*    <div />*/}
+      {/*)}*/}
+      {showDanger === true ? (
+          <div role="alert" className='alert alert-danger animated fadeInDown' onClose={() => setShowDanger(false)} dismissible={'true'}>
+            Kamu M Salah!
+          </div>
+      ):(
+          <div />
+      )}
       {show === true ? (
-        <Alert variant="success" onClose={() => setShow(false)} dismissible>
-          Check your email for verification!
-        </Alert>
-        ):(
-        <div />
+          <Alert variant="success" onClose={() => setShow(false)} dismissible>
+            Check your email for verification!
+          </Alert>
+      ):(
+          <div />
       )}
       <div className="d-flex centering-content m-t-60">
         <div className="signup">
