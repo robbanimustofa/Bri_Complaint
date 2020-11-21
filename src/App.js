@@ -1,14 +1,16 @@
 import React from 'react';
-import './App.css';
-import Navbar from './page/customer/Navbar';
-import Footer from './component/Footer';
-import TicketListCs from './page/customer/TicketListCs';
+import './App.css'
+import Footer from './component/Footer'
+import background from './background.jpg'
+import ReplyForm from './page/spv/ReplyForm'
+// import ReplyForm from './page/customer_service/ReplyForm'
+// import CsList from './page/spv/CsList'
 
 function App() {
   return (
-    <div className="App">
-        <Navbar />
-        <TicketListCs />
+    <div style={{ backgroundImage: `url(${background})`, backgroundSize:"cover", backgroundRepeat:"no-repeat", backgroundPosition:"center", width: "100vw", height:"100vh"}}>
+        {/* <CsList /> */}
+        <ReplyForm />
         <Footer />
     </div>
   );
