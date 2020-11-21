@@ -1,6 +1,11 @@
 import React from 'react'
+import {Button} from "react-bootstrap";
+import {Link} from "react-router-dom"
 
 const NavbarCustomer = () => {
+    const linkStyle = {
+        color: "black",
+    };
     return(
         <div className="navbar">
             <div> 
@@ -9,7 +14,12 @@ const NavbarCustomer = () => {
             <div>
                 <ul className="nav justify-content-end">
                     <li className="nav nav-item">
-                        <a href="#" className="nav nav-link active btn btn-danger bg-btn">Log out</a>
+                        <Link style={linkStyle} to='/'>
+                            <Button variant="danger" size="md" className="btn-md">
+                                Logout
+                            </Button>
+                        </Link>
+                        {/*<div className="nav nav-link active btn btn-danger bg-btn">Log out</div>*/}
                     </li>
                 </ul>
             </div>

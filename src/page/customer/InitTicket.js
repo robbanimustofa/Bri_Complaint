@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
+import NavbarCustomer from './NavbarCustomer'
 import { Form, Button } from 'react-bootstrap'
+import { Link } from "react-router-dom"
 
 class InitTicket extends Component {
+    linkStyle = {
+        color: "black",
+    };
     render() {
         return (
             <div style={{margin:"50px"}}>
-                <Navbar />
+                <NavbarCustomer />
                 <Form className="container">
                     <Form.Group>
                         <Form.Label>Title</Form.Label>
@@ -42,9 +46,11 @@ class InitTicket extends Component {
                     </Form.Group>
 
                     <div style={{display:"flex", justifyContent:"flex-end"}}>
-                        <Button className="justify-content-end btn-danger" variant="primary" type="submit">
-                            Cancel
-                        </Button>
+                        <Link style={this.linkStyle} to='/dashboardcustomer'>
+                            <Button className="justify-content-end btn-danger" variant="primary" type="submit">
+                                Cancel
+                            </Button>
+                        </Link>
 
                         <Button className="justify-content-end btn-success" variant="primary" type="submit">
                             Submit

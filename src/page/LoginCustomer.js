@@ -32,10 +32,15 @@ function LoginCustomer() {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password"/>
             </Form.Group>
+            <Link to='/forgotpass'>
+              <div>Forgot Password?</div>
+            </Link>
             <div className="text-center m-t-35 m-b-35">
-              <Button variant="primary" size="lg" className="btn-large button-color-394">
-                Login
-              </Button>
+              <Link to='/dashboardcustomer' style={linkStyle}>
+                <Button variant="primary" size="lg" className="btn-large button-color-394">
+                  Login
+                </Button>
+              </Link>
             </div>
 
             <div className="text-center">

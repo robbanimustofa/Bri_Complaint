@@ -15,14 +15,14 @@ const NavbarCustomerService = () => {
             <div id={'button_nav'}>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
+                        <Link to="/dashboardcs" style={linkStyle} onClick={test1}>
                             <Button variant="primary" size="lg" className="btn-large">
                                 Ticket List
                             </Button>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
+                        <Link to="/myticketcs" style={linkStyle} onClick={test1}>
                             <Button variant="primary" size="lg" className="btn-large">
                                 My Ticket
                             </Button>

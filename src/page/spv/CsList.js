@@ -1,12 +1,23 @@
 import React, {Component} from 'react'
 import NavbarSpv from './NavbarSpv'
-import { Table } from "react-bootstrap";
+import {Button, Table} from "react-bootstrap";
+import { Link } from "react-router-dom"
 
 class CsList extends Component {
+    linkStyle = {
+        color: "black",
+    };
     render() {
         return(
             <div>
                 <NavbarSpv />
+                <div>
+                    <Link to='/addcsaccount' style={this.linkStyle}>
+                        <Button variant="primary" size="lg" className="btn-large button-color-394">
+                            Add CS
+                        </Button>
+                    </Link>
+                </div>
                 <Table>
                     <thead>
                         <tr>

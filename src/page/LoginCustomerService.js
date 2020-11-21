@@ -16,7 +16,7 @@ function LoginCustomerService() {
       {/* Main */}
       <div className="d-flex centering-content">
         <div className="container-login m-t-60">
-          <div className="text-center">Login Customer Service (CS)</div>
+          {/*<div className="text-center">Login Customer Service (CS)</div>*/}
           <Form className="m-t-30">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -30,6 +30,11 @@ function LoginCustomerService() {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
+
+            <Link to='/forgotpass'>
+              <div>Forgot Password?</div>
+            </Link>
+
             <div className="text-center m-t-35 m-b-35">
               <Link to="/dashboardcs" style={linkStyle} onClick={showalertsuccess}>
                 <Button variant="primary" size="lg" className="btn-large button-color-394">

@@ -44,8 +44,6 @@ function LoginSupervisor({history}) {
       <div>
         <div className="font-57 font-goldman color-394">BRI Complaint | SPV</div>
       </div>
-
-      <div className="font-57 font-goldman color-394">BRI Complaint</div>
       {show === true ? (
           <Alert variant="success" onClose={() => setShow(false)} dismissible>
             Check your email for verification!
@@ -57,7 +55,7 @@ function LoginSupervisor({history}) {
       {/* Main */}
       <div className="d-flex centering-content">
         <div className="container-login m-t-60">
-          <div className="text-center">Login SPV Customer Service (CS)</div>
+          {/*<div className="text-center">Login SPV Customer Service (CS)</div>*/}
           <Form className="m-t-30">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -73,8 +71,11 @@ function LoginSupervisor({history}) {
               <Form.Control type="password" placeholder="Password"
                             value={password} onChange={(e) => setPassword(e.target.value)}/>
             </Form.Group>
+            <Link to='/forgotpass'>
+              <div>Forgot Password?</div>
+            </Link>
             <div className="text-center m-t-35 m-b-35">
-              <Link to="/dashboardspv" style={linkStyle} onClick={postLogin}>
+              <Link to="/dashboardspv" style={linkStyle}>
                 <Button variant="primary" size="lg" className="btn-large button-color-394">
                   Login
                 </Button>

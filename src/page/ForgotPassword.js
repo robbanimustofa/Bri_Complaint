@@ -22,11 +22,6 @@ const ForgotPassword = () => {
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>New Password</Form.Label>
-              <Form.Control type="password" placeholder="New Password" />
-            </Form.Group>
             <div className="text-center m-t-35 m-b-35">
               <Link to="/" style={linkStyle}>
                 <Button variant="primary" size="lg" className="btn-large button-color-394">
