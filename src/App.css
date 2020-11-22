@@ -102,6 +102,11 @@ width: fit-content;
     margin-left: 0px;
 }
 
+.m-lr-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /*margin l-r 20*/
 .m-lr-20{
     margin-left: 20px;
@@ -126,6 +131,11 @@ width: fit-content;
 
 .m-t-60{
     margin-top: 60px;
+}
+
+.m-tb-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bg-color-525{
@@ -174,7 +184,7 @@ p {
 
 
 .btn {
-  margin: 20px;
+  /*margin: 20px;*/
 }
 
 /*Batas Akhir*/

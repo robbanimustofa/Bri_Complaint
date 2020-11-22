@@ -8,7 +8,7 @@ function Dashboard_Spv() {
         <div className="">
             <NavbarSpv/>
             <div>
-                <Button variant="primary" size="lg" className="btn-large button-color-394">
+                <Button variant="primary" size="lg" className="btn-large button-color-394 m-tb-10">
                     Get Ticket
                 </Button>
             </div>
