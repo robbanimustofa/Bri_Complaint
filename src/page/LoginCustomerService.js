@@ -29,7 +29,7 @@ const LoginCustomerService = ({ history }) => {
     axios.post("https://f4d7eb9f0cc9.ngrok.io/api/cs/login", loginData)
       .then(res => {
         if (res.status === 200) {
-          localStorage.setItem('token', JSON.stringify(res.data.token));
+          localStorage.setItem('token', res.data.token);
           history.push("/dashboardcs")
         } else {
           alert(res.data.status)
