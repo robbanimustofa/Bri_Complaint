@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/ChangePassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/ForgotPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomerService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginSupervisor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginSupervisor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/DashboardCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/DashboardCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/InitTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/InitTicket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/NavbarCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/NavbarCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer_service/NavbarCustomerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer_service/NavbarCustomerService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/NavbarSpv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/NavbarSpv.js" afterDir="false" />
-    </list>
+    <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

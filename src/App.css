@@ -179,3 +179,22 @@ p {
 
 /*Batas Akhir*/
 
+@media only screen and (max-width: 575px) {
+    .footer{
+        display: none;
+    }
+
+    .font-57{
+        font-size: 43px;
+    }
+
+    .btn-pagination{
+        text-align: start !important;
+    }
+
+    .font-24{
+        font-size: 20px;
+    }
+}
+
+
