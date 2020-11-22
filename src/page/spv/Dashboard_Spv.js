@@ -12,7 +12,6 @@ function Dashboard_Spv() {
                     Get Ticket
                 </Button>
             </div>
-<<<<<<< .merge_file_a14368
 
             <div className='row remove-m-lr'>
                 <div className='col-sm-4 remove-padding-lr text-center'>
@@ -73,9 +72,7 @@ function Dashboard_Spv() {
             {/*</div>*/}
             {/*<Button variant="outline-primary" className="btn-large" size="lg" disabled>Previous</Button>*/}
             {/*<Button variant="outline-primary" size="lg" className="btn-large-next" disabled>Next</Button>*/}
-=======
             <TicketListSpv />
->>>>>>> .merge_file_a20732
         </div>
     );
 }
