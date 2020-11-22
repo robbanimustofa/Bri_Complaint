@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Navbar, Nav } from "react-bootstrap";
-import $ from 'jquery'
-import { findDOMNode } from 'react-dom'
+// import $ from 'jquery'
+// import { findDOMNode } from 'react-dom'
 // import { Link } from "react-router-dom";
 
 
