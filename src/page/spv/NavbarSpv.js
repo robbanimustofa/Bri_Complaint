@@ -1,50 +1,48 @@
 import React from 'react'
-import { Button } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Button, Navbar, Nav } from "react-bootstrap";
+// import $ from 'jquery'
+// import { findDOMNode } from 'react-dom'
+// import { Link } from "react-router-dom";
 
 
-const NavbarSpv = () => {
+const NavbarSpv = ({refs}) => {
     const linkStyle = {
         color: "black",
     };
+
+    const logoutHandle = () => {
+        localStorage.removeItem('token');
+    }
+
+    // const activeLink=() =>{
+    //     const test = findDOMNode({refs}.test1);
+    //     $(test).addClass('active')
+    // }
     return (
-        <div className="navbar d-flex justify-content-between">
-            <div className="">
-                <h1 className="navbar-brand font-goldman font-57">BRI Complaint | SPV</h1>
-            </div>
-            <div id={'button_nav'}>
-                <ul className="nav">
-                    <li className="nav-item">
-                        <NavLink activeStyle={{color:'grey'}} to="/dashboardspv" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="md" className="btn-md">
-                                Ticket List
-                            </Button>
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/myticketspv" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="md" className="btn-md">
-                                My Ticket
-                            </Button>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/cslist" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="md" className="btn-md">
-                                CS List
-                            </Button>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
-                            <Button variant="danger" size="md" className="btn-md">
-                                Logout
-                            </Button>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <Navbar collapseOnSelect expand="lg" className='remove-padding-lr'>
+            <Navbar.Brand className="font-goldman font-24 remove-m-lr">BRI Complaint | SPV</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className='text-right'>
+                <Nav className="mr-auto">
+
+                </Nav>
+                <Nav>
+                    {/*<Link to="/dashboardspv" style={linkStyle} onClick={test1}>*/}
+                    <Nav.Link  className='font-weight-bold' href='/dashboardspv' style={{color:'black'}}>Ticket List</Nav.Link>
+                    {/*</Link>*/}
+
+                    {/*<Link to="/myticketspv" style={linkStyle} onClick={test1}>*/}
+                    <Nav.Link className='font-weight-bold' href='/myticketspv' style={{color:'black'}}>My Tickets</Nav.Link>
+                    {/*</Link>*/}
+                    {/*<Link to="/cslist" style={linkStyle} onClick={test1}>*/}
+                    <Nav.Link href='cslist' className='font-weight-bold' style={{color:'black'}}>CS List</Nav.Link>
+                    {/*</Link>*/}
+                    {/*    <Link to="/loginspv" style={linkStyle} onClick={test1}>*/}
+                    <Nav.Link onClick={logoutHandle} href='/loginspv' className='font-weight-bold' style={{color:'red'}}>Logout</Nav.Link>
+                    {/*</Link>*/}
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     )
 };
 
