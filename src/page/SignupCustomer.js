@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Alert, Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SignupCustomer = () => {
@@ -14,17 +15,29 @@ const SignupCustomer = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (
-      name !== "" ||
-      nik !== "" ||
-      noRek !== "" ||
-      email !== "" ||
-      password !== ""
-    ) {
-      setShow(true);
-    }else{
-      setShowDanger(true);
-    }
+    const signupData = {
+      name: name,
+      no_ktp: nik,
+      account_number: noRek,
+      email: email,
+      password: password,
+    };
+    axios.post("https://f4d7eb9f0cc9.ngrok.io/api/customer/signup", signupData)
+      .then(res => {
+        console.log(res);
+        if (res.status === 200) {
+          alert("Check your email for verification!")
+        } else {
+          alert(res.data.status)
+        }
+        // localStorage.setItem('token', JSON.stringify(res.data.token));
+
+        // history.push("/dashboardcustomer")
+      })
+      .catch(err => {
+        console.log(err)
+        setShowDanger(true);
+      })
   };
 
   const linkStyle = {
@@ -34,27 +47,31 @@ const SignupCustomer = () => {
   return (
     <div className="">
       <div className="font-57 font-goldman color-394">BRI Complaint</div>
-      {/*{showDanger === true ? (*/}
-      {/*    <Alert variant="danger" style={{animation-name:'fadeinDown'}} onClose={() => setShowDanger(false)} dismissible>*/}
-      {/*      Kamu M Salah!*/}
-      {/*    </Alert>*/}
-      {/*):(*/}
-      {/*    <div />*/}
-      {/*)}*/}
-      {showDanger === true ? (
+      {
+        showDanger === true ? (
+          <Alert variant="danger" className="animated fadeInDown" onClose={() => setShowDanger(false)} dismissible>
+            Kamu salahh hahahha
+          </Alert>
+        ) : (
+            <div />
+          )
+      }
+      {/* {showDanger === true ? (
           <div role="alert" className='alert alert-danger animated fadeInDown' onClose={() => setShowDanger(false)} dismissible={'true'}>
             Kamu M Salah!
           </div>
       ):(
           <div />
-      )}
-      {show === true ? (
+      )} */}
+      {
+        show === true ? (
           <Alert variant="success" onClose={() => setShow(false)} dismissible>
             Check your email for verification!
           </Alert>
-      ):(
-          <div />
-      )}
+        ) : (
+            <div />
+          )
+      }
       <div className="d-flex centering-content m-t-60">
         <div className="signup">
           <Form className="form-retno">
@@ -137,14 +154,15 @@ const SignupCustomer = () => {
             <Button className="btn button-color-394" onClick={submitHandler}>
               Sign Up
             </Button>
-            <Link to="/" style={linkStyle}>
-            <div>Already have an account?<span className="color-1f0">Login here</span></div>
-            </Link>
-            
+            <div className="text-center">
+              <Link to="/" style={linkStyle}>
+                <div>Already have an account?<span className="color-1f0"> Login here</span></div>
+              </Link>
+            </div>
           </Form>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

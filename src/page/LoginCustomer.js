@@ -1,13 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-// import axios from 'axios';
+import { Link, Redirect } from "react-router-dom";
+import axios from "axios";
 
-function LoginCustomer() {
+const LoginCustomer = ({ history }) => {
   const linkStyle = {
     color: "black",
   };
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const token = localStorage.getItem('token');
+
+  useEffect(() => {
+    if (token) {
+      history.push("/dashboardcustomer");
+    }
+  }, [history, token]);
+
+  const loginHandle = (e) => {
+    e.preventDefault();
+    const loginData = {
+      email: email,
+      password: password,
+    };
+    axios.post("https://f4d7eb9f0cc9.ngrok.io/api/customer/login", loginData)
+      .then(res => {
+        if (res.status === 200) {
+          localStorage.setItem('token', JSON.stringify(res.data.token));
+          history.push("/dashboardcustomer")
+        } else {
+          alert(res.data.status)
+        }
+      }, [history])
+      .catch(err => {
+        console.log(err)
+        alert("Missing password");
+      })
+  }
 
   return (
     <div>
@@ -22,7 +54,13 @@ function LoginCustomer() {
           <Form className="m-t-30">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email"/>
+              <Form.Control
+                value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                name="email"
+                placeholder="Enter email" />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -30,17 +68,22 @@ function LoginCustomer() {
 
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password"/>
+              <Form.Control
+                value={password}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
             </Form.Group>
             <Link to='/forgotpass'>
               <div>Forgot Password?</div>
             </Link>
             <div className="text-center m-t-35 m-b-35">
-              <Link to='/dashboardcustomer' style={linkStyle}>
-                <Button variant="primary" size="lg" className="btn-large button-color-394">
-                  Login
-                </Button>
-              </Link>
+              <Button variant="primary" size="lg" className="btn-large button-color-394" onClick={loginHandle}>
+                Login
+              </Button>
             </div>
 
             <div className="text-center">
@@ -68,8 +111,5 @@ function LoginCustomer() {
     </div>
   );
 }
-
-
-
 
 export default LoginCustomer;
