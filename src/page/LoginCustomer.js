@@ -20,32 +20,26 @@ const LoginCustomer = ({ history }) => {
     }
   }, [history, token]);
 
-  const submitHandle = () => {
+  const loginHandle = (e) => {
+    e.preventDefault();
     const loginData = {
       email: email,
       password: password,
     };
-    axios.post("https://reqres.in/api/login", loginData)
+    axios.post("https://f4d7eb9f0cc9.ngrok.io/api/customer/login", loginData)
       .then(res => {
-        localStorage.setItem('token', JSON.stringify(res.data.token));
-        console.log(res.status);
-        history.push("/dashboardcustomer")
+        if (res.status === 200) {
+          localStorage.setItem('token', JSON.stringify(res.data.token));
+          history.push("/dashboardcustomer")
+        } else {
+          alert(res.data.status)
+        }
       }, [history])
       .catch(err => {
         console.log(err)
         alert("Missing password");
       })
   }
-
-
-  // const postLogin = async () => {
-  //   const response =await axios.post("https://b0947247554d.ngrok.io/api/customer/login").then.catch((err) => console.log("error: ", err));
-  //   console.log('Response : ',email);
-  //   if(response && response.data) setEmail(response.data);
-  // };
-
-
-
 
   return (
     <div>
@@ -60,7 +54,7 @@ const LoginCustomer = ({ history }) => {
           <Form className="m-t-30">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control 
+              <Form.Control
                 value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)}
@@ -83,8 +77,11 @@ const LoginCustomer = ({ history }) => {
                 placeholder="Password"
               />
             </Form.Group>
+            <Link to='/forgotpass'>
+              <div>Forgot Password?</div>
+            </Link>
             <div className="text-center m-t-35 m-b-35">
-              <Button variant="primary" size="lg" className="btn-large button-color-394" onClick={submitHandle}>
+              <Button variant="primary" size="lg" className="btn-large button-color-394" onClick={loginHandle}>
                 Login
               </Button>
             </div>
