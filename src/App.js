@@ -6,7 +6,6 @@ import SignupCustomer from "./page/SignupCustomer";
 import DashboardSpv from "./page/spv/Dashboard_Spv";
 import DashboardCustomerService from "./page/customer_service/DashboardCustomerService";
 import InitTicket from './page/customer/InitTicket';
-import background from './background.jpg';
 import DashboardCustomer from './page/customer/DashboardCustomer';
 import FooterWeb from "./component/Footer";
 import AddCSAccount from './page/AddCSAccount';
@@ -25,8 +24,7 @@ function App() {
     return (
         <BrowserRouter>
             {/*<Navbar/>*/}
-            <div className="padding-lr-20 body background"
-                 style={{backgroundImage: `url(${background})`, backgroundSize: "cover"}}>
+            <div className="padding-lr-20 body">
                 {/* <AddCSAccount /> */}
                 <Fragment>
                     <Route path="/" component={LoginCustomer} exact/>

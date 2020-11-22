@@ -25,10 +25,10 @@ const MyTicketSpv = () => {
                         </tr>
                     </tbody>
                 </Table>
-                <div className="d-flex justify-content-end">
-                    <Button variant="outline-primary" className="btn-large" size="lg" disabled>Previous</Button>
-                    <Button variant="outline-primary" size="lg" className="btn-large" disabled>Next</Button>
-                </div>
+                {/*<div className="d-flex justify-content-end">*/}
+                {/*    <Button variant="outline-primary" className="btn-large" size="lg" disabled>Previous</Button>*/}
+                {/*    <Button variant="outline-primary" size="lg" className="btn-large" disabled>Next</Button>*/}
+                {/*</div>*/}
             </div>
         </div>
     )

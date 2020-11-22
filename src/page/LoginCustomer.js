@@ -108,6 +108,7 @@ const LoginCustomer = ({ history }) => {
           </Form>
         </div>
       </div>
+      <div></div>
     </div>
   );
 }

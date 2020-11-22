@@ -3,10 +3,17 @@
   padding: 20px;
 }
 
+body {
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 16px;
+    height: 100%;
+    background-image: url('background.jpg');
+}
+
 .body {
   font-family: "Inter-Medium", "Inter", sans-serif;
   font-size: 16px;
-  height: 100vh;
+  height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -27,6 +34,10 @@
 .font-24{
     font-size: 24px;
 }
+
+/*.font{*/
+/*    font-size: ;*/
+/*}*/
 
 .font-57 {
   font-size: 57px;
@@ -94,6 +105,11 @@ width: fit-content;
 .btn-large{
   padding: 10px 50px;
   font-size: 16px;
+}
+
+.btn-large-next{
+    padding: 10px 64px;
+    font-size: 16px;
 }
 
 /*margin lr 0*/
@@ -174,7 +190,25 @@ p {
 
 
 .btn {
-  margin: 20px;
+  margin: 10px 5px;
+}
+
+@media only screen and (max-width: 575px) {
+    .footer{
+        display: none;
+    }
+
+    .font-57{
+        font-size: 43px;
+    }
+
+    .btn-pagination{
+        text-align: start !important;
+    }
+
+    .font-24{
+        font-size: 20px;
+    }
 }
 
 /*Batas Akhir*/
