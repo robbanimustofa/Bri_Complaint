@@ -6,7 +6,7 @@ import TicketList from './TicketList'
 function DashboardCustomerService() {
     return (
         <div className="">
-            <NavbarCustomerService/>
+            <NavbarCustomerService />
             <div>
                 <Button variant="primary" size="lg" className="btn-large button-color-394">
                     Get Ticket

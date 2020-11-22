@@ -23,7 +23,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 function App() {
     return (
         <BrowserRouter>
-            {/*<Navbar/>*/}
+            {/*<Navbars/>*/}
             <div className="padding-lr-20 body">
                 {/* <AddCSAccount /> */}
                 <Fragment>
