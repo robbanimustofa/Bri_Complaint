@@ -1,16 +1,41 @@
-import React, {useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-// import axios from 'axios';
+import { Link, Redirect } from "react-router-dom";
+import axios from "axios";
 
-function LoginCustomer() {
+const LoginCustomer = ({ history }) => {
   const linkStyle = {
     color: "black",
   };
 
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const token = localStorage.getItem('token');
+
+  useEffect(() => {
+    if (token) {
+      history.push("/dashboardcustomer");
+    }
+  }, [history, token]);
+
+  const submitHandle = () => {
+    const loginData = {
+      email: email,
+      password: password,
+    };
+    axios.post("https://reqres.in/api/login", loginData)
+      .then(res => {
+        localStorage.setItem('token', JSON.stringify(res.data.token));
+        console.log(res.status);
+        history.push("/dashboardcustomer")
+      }, [history])
+      .catch(err => {
+        console.log(err)
+        alert("Missing password");
+      })
+  }
 
 
   // const postLogin = async () => {
@@ -19,10 +44,6 @@ function LoginCustomer() {
   //   if(response && response.data) setEmail(response.data);
   // };
 
-
-  useEffect(()=> {
-      // postLogin();
-  }, []);
 
 
 
@@ -39,7 +60,13 @@ function LoginCustomer() {
           <Form className="m-t-30">
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control 
+                value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                name="email"
+                placeholder="Enter email" />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -47,10 +74,17 @@ function LoginCustomer() {
 
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control
+                value={password}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
             </Form.Group>
             <div className="text-center m-t-35 m-b-35">
-              <Button variant="primary" size="lg" className="btn-large button-color-394">
+              <Button variant="primary" size="lg" className="btn-large button-color-394" onClick={submitHandle}>
                 Login
               </Button>
             </div>
@@ -80,8 +114,5 @@ function LoginCustomer() {
     </div>
   );
 }
-
-
-
 
 export default LoginCustomer;

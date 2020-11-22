@@ -15,21 +15,21 @@ const NavbarSpv = () => {
             <div id={'button_nav'}>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
+                        <Link to="/dashboardspv" style={linkStyle}>
                             <Button variant="primary" size="lg" className="btn-large">
                                 Ticket List
                             </Button>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
+                        <Link to="/myticketspv" style={linkStyle}>
                             <Button variant="primary" size="lg" className="btn-large">
                                 My Ticket
                             </Button>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/loginspv" style={linkStyle} onClick={test1}>
+                        <Link to="/detailratingcs" style={linkStyle}>
                             <Button variant="primary" size="lg" className="btn-large">
                                 CS List
                             </Button>
