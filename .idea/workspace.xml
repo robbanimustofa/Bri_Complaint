@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/MyTicketSpv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/MyTicketSpv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/NavbarSpv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/NavbarSpv.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="retno" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
