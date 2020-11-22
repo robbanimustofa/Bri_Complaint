@@ -25,13 +25,12 @@ const SignupCustomer = () => {
     axios.post("https://f4d7eb9f0cc9.ngrok.io/api/customer/signup", signupData)
       .then(res => {
         console.log(res);
-        if (res.status === 200){
+        if (res.status === 200) {
           alert("Check your email for verification!")
         } else {
           alert(res.data.status)
         }
         // localStorage.setItem('token', JSON.stringify(res.data.token));
-        
         // history.push("/dashboardcustomer")
       })
       .catch(err => {
@@ -155,9 +154,9 @@ const SignupCustomer = () => {
               Sign Up
             </Button>
             <div className="text-center">
-            <Link to="/" style={linkStyle}>
-              <div>Already have an account?<span className="color-1f0"> Login here</span></div>
-            </Link>
+              <Link to="/" style={linkStyle}>
+                <div>Already have an account?<span className="color-1f0"> Login here</span></div>
+              </Link>
             </div>
           </Form>
         </div>
