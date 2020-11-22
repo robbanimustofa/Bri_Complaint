@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Tickets from './Tickets'
+import TicketsSpv from './TicketsSpv'
 import Pagination from './Pagination'
 
 
-class TicketList extends Component {
+class TicketListSpv extends Component {
 
 
     state = {
@@ -15,8 +15,12 @@ class TicketList extends Component {
     }
 
     fetchTicket = async () => {
-        const apiURL = "https://jsonplaceholder.typicode.com/todos";
-        const response = await axios.get(apiURL)
+        const apiURL = "https://f4d7eb9f0cc9.ngrok.io/api/spv/tickets/lists/escalated";
+        const response = await axios.get(apiURL, {
+            headers: {
+                "x-access-token": JSON.parse(localStorage.getItem('token'))
+            }
+        })
 
         this.setState({
             tickets: response.data
@@ -55,11 +59,11 @@ class TicketList extends Component {
 
         return (
             <div>
-                <Tickets tickets={currentTickets} loading={loading} />
+                <TicketsSpv tickets={currentTickets} loading={loading} />
                 <Pagination ticketsPerPage={ticketsPerPage} totalTickets={tickets.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
             </div>
         )
     }
 }
 
-export default TicketList
+export default TicketListSpv

@@ -1,7 +1,7 @@
 import React from "react";
-import {Button, Table} from "react-bootstrap";
+import {Button} from "react-bootstrap";
 import NavbarSpv from "./NavbarSpv"
-import TicketList from './TicketList'
+import TicketListSpv from './TicketListSpv'
 
 function Dashboard_Spv() {
     return (
@@ -12,7 +12,7 @@ function Dashboard_Spv() {
                     Get Ticket
                 </Button>
             </div>
-            <TicketList />
+            <TicketListSpv />
         </div>
     );
 }

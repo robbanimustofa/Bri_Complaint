@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
 import { Table } from "react-bootstrap";
 
-class Tickets extends Component {
+class TicketsSpv extends Component {
 
     render() {
-        const { tickets, loading } = this.props
+        const { TicketSpv, loading } = this.props
 
         if (loading) {
             return <h2>Loading...</h2>
         }
 
-        const ticketList = tickets && tickets.map((ticket, index) => {
-            const date = "00/00/00 00-00-00"
+        const ticketList = TicketSpv && TicketSpv.map((ticket, index) => {
             return (
                 <tr key={index}>
-                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{date}</td>
-                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.id}</td>
-                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.title}</td>
-                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.completed}</td>
+                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.createdAt}</td>
+                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.ticket_id}</td>
+                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.complaint_name}</td>
+                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.tag}</td>
                 </tr>
             )
         })
@@ -42,4 +41,4 @@ class Tickets extends Component {
     }
 }
 
-export default Tickets
+export default TicketsSpv
