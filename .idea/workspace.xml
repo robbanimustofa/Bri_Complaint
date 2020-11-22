@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="" />
+    <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/Dashboard_Spv.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="retno" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +42,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/work/project-vue-bos" />
+    <property name="last_opened_file_path" value="D:/work/smartlink-owner-frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -80,7 +83,6 @@
       <workItem from="1605889998402" duration="474000" />
       <workItem from="1605940509956" duration="4095000" />
       <workItem from="1605967154318" duration="3871000" />
-      <workItem from="1606025726903" duration="20595000" />
     </task>
     <task id="LOCAL-00001" summary="edit app.js dan navbar,js sisa semalam">
       <created>1605769061210</created>

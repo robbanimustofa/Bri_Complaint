@@ -8,7 +8,7 @@ function Dashboard_Spv() {
         <div className="">
             <NavbarSpv/>
             <div>
-                <Button variant="primary" size="lg" className="btn-large button-color-394">
+                <Button variant="primary" size="lg" className="btn-large button-color-394 m-tb-10">
                     Get Ticket
                 </Button>
             </div>
@@ -72,7 +72,6 @@ function Dashboard_Spv() {
             {/*</div>*/}
             {/*<Button variant="outline-primary" className="btn-large" size="lg" disabled>Previous</Button>*/}
             {/*<Button variant="outline-primary" size="lg" className="btn-large-next" disabled>Next</Button>*/}
-            <TicketListSpv />
         </div>
     );
 }

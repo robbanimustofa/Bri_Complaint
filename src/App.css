@@ -3,17 +3,10 @@
   padding: 20px;
 }
 
-body {
-    font-family: "Inter-Medium", "Inter", sans-serif;
-    font-size: 16px;
-    height: 100%;
-    background-image: url('background.jpg');
-}
-
 .body {
   font-family: "Inter-Medium", "Inter", sans-serif;
   font-size: 16px;
-  height: 100%;
+  height: 100vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -34,10 +27,6 @@ body {
 .font-24{
     font-size: 24px;
 }
-
-/*.font{*/
-/*    font-size: ;*/
-/*}*/
 
 .font-57 {
   font-size: 57px;
@@ -107,15 +96,15 @@ width: fit-content;
   font-size: 16px;
 }
 
-.btn-large-next{
-    padding: 10px 64px;
-    font-size: 16px;
-}
-
 /*margin lr 0*/
 .remove-m-lr{
     margin-right: 0px;
     margin-left: 0px;
+}
+
+.m-lr-10{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*margin l-r 20*/
@@ -142,6 +131,11 @@ width: fit-content;
 
 .m-t-60{
     margin-top: 60px;
+}
+
+.m-tb-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bg-color-525{
@@ -190,8 +184,10 @@ p {
 
 
 .btn {
-  margin: 10px 5px;
+  /*margin: 20px;*/
 }
+
+/*Batas Akhir*/
 
 @media only screen and (max-width: 575px) {
     .footer{
@@ -211,5 +207,4 @@ p {
     }
 }
 
-/*Batas Akhir*/
 
