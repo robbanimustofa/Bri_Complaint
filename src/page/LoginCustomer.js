@@ -65,6 +65,7 @@ function LoginCustomer() {
           </Form>
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
