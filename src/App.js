@@ -6,7 +6,6 @@ import SignupCustomer from "./page/SignupCustomer";
 import DashboardSpv from "./page/spv/dashboard_spv/DashboardSpv";
 import DashboardCs from "./page/customer_service/dashboard_cs/DashboardCs";
 import InitTicket from './page/customer/dashboard_customer/InitTicket';
-import background from './background.jpg';
 import DashboardCustomer from './page/customer/dashboard_customer/DashboardCustomer';
 import FooterWeb from "./component/Footer";
 import AddCSAccount from './page/spv/cs_list/AddCsAccount';
