@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import NavbarSpv from '../NavbarSpv'
-import {Button, Table} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom"
 import List from "./List"
 
