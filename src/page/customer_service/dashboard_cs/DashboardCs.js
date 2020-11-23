@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import NavbarCustomerService from "./NavbarCustomerService"
-import TicketList from './TicketList'
+import NavbarCustomerService from "../NavbarCustomerService"
+import TicketListCs from './TicketListCs'
 
-function DashboardCustomerService() {
+function DashboardCs() {
     return (
         <div className="">
             <NavbarCustomerService/>
@@ -12,9 +12,9 @@ function DashboardCustomerService() {
                     Get Ticket
                 </Button>
             </div>
-            <TicketList />
+            <TicketListCs />
         </div>
     );
 }
 
-export default DashboardCustomerService;
+export default DashboardCs;

@@ -26,7 +26,7 @@ class replyForm extends Component {
                         <tr className="row mb-5">
                             <td className="col-sm-3">Screenshot</td>
                             <td className="col-sm-1">:</td>
-                            <td className="col-sm-8 bg-light"><a href="#">problem.jpg</a></td>
+                            <td className="col-sm-8 bg-light"><p>problem.jpg</p></td>
                         </tr>
                         <tr className="row mb-5">
                             <td className="col-sm-3">URL Video</td>

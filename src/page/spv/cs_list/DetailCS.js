@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Table } from "react-bootstrap";
-import NavbarSpv from "./NavbarSpv";
+import NavbarSpv from "../NavbarSpv";
 
 const DetailCS = () => {
     return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NavbarCustomer from './NavbarCustomer'
+import NavbarCustomer from '../NavbarCustomer'
 import { Form, Button } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 
