@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { Table } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
-class replyForm extends Component {
+class replyFormSpv extends Component {
     render() {
         return (
             <div className="center" style={{ margin: "50px 50px 75px 50px" }}>
@@ -43,10 +44,11 @@ class replyForm extends Component {
 
                     <div className="d-flex justify-content-end">
                         <div>
-                            <Button className="justify-content-end btn-danger" variant="primary" type="submit">
-                                Cancel
-                            </Button>
-
+                            <Link to="/myticketspv">
+                                <Button className="justify-content-end btn-danger" variant="primary" type="submit">
+                                    Cancel
+                                </Button>
+                            </Link>
                             <Button className="justify-content-end btn-success" variant="primary" type="submit">
                                 Submit
                             </Button>
@@ -58,4 +60,4 @@ class replyForm extends Component {
     }
 }
 
-export default replyForm
+export default replyFormSpv
