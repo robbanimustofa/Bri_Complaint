@@ -7,6 +7,11 @@ const NavbarCustomerService = () => {
     const linkStyle = {
         color: "black",
     };
+
+    const logOut = () => {
+        localStorage.removeItem('token');
+    }
+
     return(
         <div className="navbar d-flex">
             <div className="">
@@ -30,7 +35,7 @@ const NavbarCustomerService = () => {
                     </li>
                     <li className="nav-item">
                         <Link to="/logincs" style={linkStyle} onClick={test1}>
-                            <Button variant="danger" size="lg" className="btn-large">
+                            <Button onClick={logOut} variant="danger" size="lg" className="btn-large">
                                 Logout
                             </Button>
                         </Link>

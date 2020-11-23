@@ -22,7 +22,7 @@ const SignupCustomer = () => {
       email: email,
       password: password,
     };
-    axios.post("https://f4d7eb9f0cc9.ngrok.io/api/customer/signup", signupData)
+    axios.post("https://785e40a7b3e4.ngrok.io/api/customer/signup", signupData)
       .then(res => {
         console.log(res);
         if (res.status === 200) {

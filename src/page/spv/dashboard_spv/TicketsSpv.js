@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Table } from "react-bootstrap";
+// import { Link } from 'react-router-dom';
 
 class TicketsSpv extends Component {
 
@@ -12,12 +13,14 @@ class TicketsSpv extends Component {
 
         const ticketList = tickets && tickets.map((ticket, index) => {
             return (
+                
                 <tr key={index}>
                     <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.createdAt}</td>
                     <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.ticket_id}</td>
                     <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.complaint_name}</td>
                     <td style={{ textAlign: "center", border: "solid 10px white" }}><span style={{ padding: "", backgroundColor: "" }}>{ticket.tag}</span> From <span style={{ padding: "2px", backgroundColor:"" }}>Dedy</span></td>
                 </tr>
+                
             )
         })
 

@@ -7,6 +7,11 @@ const NavbarSpv = () => {
     const linkStyle = {
         color: "black",
     };
+
+    const logOut = () => {
+        localStorage.removeItem('token');
+    }
+
     return (
         <div className="navbar d-flex justify-content-between">
             <div className="">
@@ -37,7 +42,7 @@ const NavbarSpv = () => {
                     </li>
                     <li className="nav-item">
                         <Link to="/loginspv" style={linkStyle} onClick={test1}>
-                            <Button variant="danger" size="md" className="btn-md">
+                            <Button onClick={logOut} variant="danger" size="md" className="btn-md">
                                 Logout
                             </Button>
                         </Link>

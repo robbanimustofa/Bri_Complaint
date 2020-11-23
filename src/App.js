@@ -10,8 +10,8 @@ import background from './background.jpg';
 import DashboardCustomer from './page/customer/dashboard_customer/DashboardCustomer';
 import FooterWeb from "./component/Footer";
 import AddCSAccount from './page/spv/cs_list/AddCsAccount';
-import ReplyFormSpv from './page/spv/my_ticket/ReplyForm';
-import ReplyForm from './page/customer_service/my_ticket/ReplyForm';
+import ReplyFormSpv from './page/spv/my_ticket/ReplyFormSpv';
+import ReplyFormCs from './page/customer_service/my_ticket/ReplyFormCs';
 import CsList from './page/spv/cs_list/CsList';
 import MyTicketCs from './page/customer_service/my_ticket/MyTicketCs';
 import MyTicketSpv from './page/spv/my_ticket/MyTicketSpv';
@@ -38,7 +38,7 @@ function App() {
                     <Route path="/dashboardcustomer" component={DashboardCustomer} exact/>
                     <Route path="/createticket" component={InitTicket} exact/>
                     <Route path="/addcsaccount" component={AddCSAccount} exact/>
-                    <Route path="/replyformcs" component={ReplyForm} exact/>
+                    <Route path="/replyformcs:id" component={ReplyFormCs} exact/>
                     <Route path="/replyformspv" component={ReplyFormSpv} exact/>
                     <Route path="/myticketcs" component={MyTicketCs} exact/>
                     <Route path="/myticketspv" component={MyTicketSpv} exact/>

@@ -6,6 +6,11 @@ const NavbarCustomer = () => {
     const linkStyle = {
         color: "black",
     };
+
+    const logOut = () => {
+        localStorage.removeItem('token');
+    }
+
     return(
         <div className="navbar">
             <div> 
@@ -15,7 +20,7 @@ const NavbarCustomer = () => {
                 <ul className="nav justify-content-end">
                     <li className="nav nav-item">
                         <Link style={linkStyle} to='/'>
-                            <Button variant="danger" size="md" className="btn-md">
+                            <Button onClick={logOut} variant="danger" size="md" className="btn-md">
                                 Logout
                             </Button>
                         </Link>

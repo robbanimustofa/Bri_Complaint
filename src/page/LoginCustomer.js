@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import { Form, Button } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 const LoginCustomer = ({ history }) => {
@@ -26,7 +26,7 @@ const LoginCustomer = ({ history }) => {
       email: email,
       password: password,
     };
-    axios.post("https://3671b2ca5014.ngrok.io/api/customer/login", loginData)
+    axios.post("https://785e40a7b3e4.ngrok.io/api/customer/login", loginData)
       .then(res => {
         if (res.status === 200) {
           localStorage.setItem('token', JSON.stringify(res.data.token));

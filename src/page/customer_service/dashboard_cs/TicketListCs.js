@@ -15,7 +15,7 @@ class TicketListCs extends Component {
     }
 
     fetchTicket = async () => {
-        const apiURL = "https://3671b2ca5014.ngrok.io/api/cs/tickets/lists/unread";
+        const apiURL = "https://785e40a7b3e4.ngrok.io/api/cs/tickets/lists/unread";
         const response = await axios.get(apiURL, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))
