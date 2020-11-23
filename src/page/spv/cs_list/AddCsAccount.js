@@ -25,7 +25,7 @@ const AddCSAccount = ({ history }) => {
       photo: file,
       pub_photo: file
     };
-    axios.post("https://3671b2ca5014.ngrok.io/api/spv/add-cs", addData, {
+    axios.post("https://785e40a7b3e4.ngrok.io/api/spv/add-cs", addData, {
       headers: {
         "x-access-token": JSON.parse(localStorage.getItem('token'))
       }
