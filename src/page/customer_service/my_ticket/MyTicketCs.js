@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Table } from "react-bootstrap";
-import NavbarCustomerService from "./NavbarCustomerService"
+import NavbarCustomerService from "../NavbarCustomerService"
 
 const MyTicketCS = () => {
     return (
