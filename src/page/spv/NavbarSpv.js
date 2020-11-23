@@ -6,9 +6,6 @@ import { Button, Navbar, Nav } from "react-bootstrap";
 
 
 const NavbarSpv = ({refs}) => {
-    const linkStyle = {
-        color: "black",
-    };
 
     const logoutHandle = () => {
         localStorage.removeItem('token');
@@ -45,9 +42,5 @@ const NavbarSpv = ({refs}) => {
         </Navbar>
     )
 };
-
-function test1() {
-    alert("Anda");
-}
 
 export default NavbarSpv;

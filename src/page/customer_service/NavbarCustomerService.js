@@ -1,48 +1,35 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import {Button} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 
 
 const NavbarCustomerService = () => {
-    const linkStyle = {
-        color: "black",
-    };
+    const logoutHandle = () => {
+        localStorage.removeItem('token');
+    }
     return(
-        <div className="navbar d-flex">
-            <div className="">
-                <h1 className="navbar-brand font-goldman font-57">BRI Complaint | CS</h1>
-            </div>
-            <div id={'button_nav'}>
-                <ul className="nav justify-content-end">
-                    <li className="nav-item">
-                        <Link to="/dashboardcs" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="lg" className="btn-large">
-                                Ticket List
-                            </Button>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/myticketcs" style={linkStyle} onClick={test1}>
-                            <Button variant="primary" size="lg" className="btn-large">
-                                My Ticket
-                            </Button>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/logincs" style={linkStyle} onClick={test1}>
-                            <Button variant="danger" size="lg" className="btn-large">
-                                Logout
-                            </Button>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <Navbar collapseOnSelect expand="lg" className='remove-padding-lr'>
+        <Navbar.Brand className="font-goldman font-24 remove-m-lr">BRI Complaint | CS</Navbar.Brand>
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav" className='text-right'>
+        <Nav className="mr-auto">
+
+        </Nav>
+    <Nav>
+        {/*<Link to="/dashboardspv" style={linkStyle} onClick={test1}>*/}
+        <Nav.Link  className='font-weight-bold' href='/dashboardcs' style={{color:'black'}}>Ticket List</Nav.Link>
+        {/*</Link>*/}
+
+        {/*<Link to="/myticketspv" style={linkStyle} onClick={test1}>*/}
+        <Nav.Link className='font-weight-bold' href='/myticketcs' style={{color:'black'}}>My Tickets</Nav.Link>
+        {/*</Link>*/}
+        {/*    <Link to="/loginspv" style={linkStyle} onClick={test1}>*/}
+        <Nav.Link onClick={logoutHandle} href='/logincs' className='font-weight-bold' style={{color:'red'}}>Logout</Nav.Link>
+        {/*</Link>*/}
+    </Nav>
+    </Navbar.Collapse>
+</Navbar>
     )
 };
-
-function test1() {
-    alert("Anda Berhasil logout");
-}
 
 export default NavbarCustomerService;

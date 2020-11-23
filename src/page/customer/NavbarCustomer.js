@@ -1,30 +1,27 @@
 import React from 'react'
-import {Button} from "react-bootstrap";
-import {Link} from "react-router-dom"
+import {Nav, Navbar} from "react-bootstrap";
+// import {Link} from "react-router-dom"
 
 const NavbarCustomer = () => {
-    const linkStyle = {
-        color: "black",
-    };
+    const logoutHandle = () => {
+        localStorage.removeItem('token');
+    }
     return(
-        <div className="navbar">
-            <div> 
-                <h1 className="navbar-brand font-goldman font-57">BRI Complaint</h1>
-            </div>
-            <div>
-                <ul className="nav justify-content-end">
-                    <li className="nav nav-item">
-                        <Link style={linkStyle} to='/'>
-                            <Button variant="danger" size="md" className="btn-md">
-                                Logout
-                            </Button>
-                        </Link>
-                        {/*<div className="nav nav-link active btn btn-danger bg-btn">Log out</div>*/}
-                    </li>
-                </ul>
-            </div>
-        </div>
-    ) 
-}
+        <Navbar collapseOnSelect expand="lg" className='remove-padding-lr'>
+            <Navbar.Brand className="font-goldman font-24 remove-m-lr">BRI Complaint | CS</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className='text-right'>
+                <Nav className="mr-auto">
+
+                </Nav>
+                <Nav>
+                    {/*    <Link to="/loginspv" style={linkStyle} onClick={test1}>*/}
+                    <Nav.Link onClick={logoutHandle} href='/logincs' className='font-weight-bold' style={{color:'red'}}>Logout</Nav.Link>
+                    {/*</Link>*/}
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    )
+};
 
 export default NavbarCustomer;
