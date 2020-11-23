@@ -13,7 +13,7 @@ const AddCSAccount = ({ history }) => {
   const [pseudonym, setPseudonym] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState("/photo/rani.jpg");
 
   const addCSHandler = (e) => {
     e.preventDefault();
@@ -22,13 +22,23 @@ const AddCSAccount = ({ history }) => {
       pub_name: pseudonym,
       email: email,
       password: password,
-      photo: file
+      photo: file,
+      pub_photo: file
     };
-    axios.post("https://reqres.in/api/register", addData)
+    axios.post("https://3671b2ca5014.ngrok.io/api/spv/add-cs", addData, {
+      headers: {
+        "x-access-token": JSON.parse(localStorage.getItem('token'))
+      }
+    })
       .then(res => {
         // localStorage.setItem('token', JSON.stringify(res.data.token));
-        console.log(res.data);
-        history.push("/cslist")
+        if (res.status === 200) {
+          alert("Berhasil menambahkan CS")
+          history.push("/cslist")
+        } else {
+          alert(res.data.status)
+        } console.log(res.data);
+
       })
       .catch(err => {
         console.log(err)
@@ -104,7 +114,7 @@ const AddCSAccount = ({ history }) => {
                 </Button>
               </Link>
 
-              <Button className="justify-content-end btn-primary btn-md" variant="primary" type="submit">
+              <Button className="justify-content-end btn-primary btn-md" variant="primary" onClick={addCSHandler}>
                 Add
                 </Button>
             </div>
