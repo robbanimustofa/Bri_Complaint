@@ -3,6 +3,8 @@ import "../App.css";
 import { Form, Button } from "react-bootstrap";
 import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const LoginCustomer = ({ history }) => {
   const linkStyle = {
@@ -26,7 +28,7 @@ const LoginCustomer = ({ history }) => {
       email: email,
       password: password,
     };
-    axios.post("https://f4d7eb9f0cc9.ngrok.io/api/customer/login", loginData)
+    axios.post('https://3671b2ca5014.ngrok.io/api/customer/login', loginData)
       .then(res => {
         if (res.status === 200) {
           localStorage.setItem('token', JSON.stringify(res.data.token));

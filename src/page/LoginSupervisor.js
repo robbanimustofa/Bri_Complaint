@@ -26,7 +26,7 @@ const LoginSupervisor = ({ history }) => {
       email: email,
       password: password,
     };
-    axios.post("https://f4d7eb9f0cc9.ngrok.io/api/spv/login", loginData)
+    axios.post("https://882a64c378f3.ngrok.io/api/spv/login", loginData)
       .then(res => {
         if (res.status === 200) {
           localStorage.setItem('token', JSON.stringify(res.data.token));
