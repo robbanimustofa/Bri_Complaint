@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Table } from "react-bootstrap";
 
-class TicketsSpv extends Component {
+class MyTicketTableSpv extends Component {
 
     render() {
         const { tickets, loading } = this.props
@@ -16,7 +16,7 @@ class TicketsSpv extends Component {
                     <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.createdAt}</td>
                     <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.ticket_id}</td>
                     <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.complaint_name}</td>
-                    <td style={{ textAlign: "center", border: "solid 10px white" }}><span style={{ padding: "", backgroundColor: "" }}>{ticket.tag}</span> From <span style={{ padding: "2px", backgroundColor:"" }}>Dedy</span></td>
+                    <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.tag}<a className="ml-5" href="/">details</a></td>
                 </tr>
             )
         })
@@ -41,4 +41,4 @@ class TicketsSpv extends Component {
     }
 }
 
-export default TicketsSpv
+export default MyTicketTableSpv
