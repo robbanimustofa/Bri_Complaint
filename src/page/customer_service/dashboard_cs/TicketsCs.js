@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Table } from "react-bootstrap";
 
-class Tickets extends Component {
+class TicketsCs extends Component {
 
     render() {
         const { tickets, loading } = this.props
@@ -41,4 +41,4 @@ class Tickets extends Component {
     }
 }
 
-export default Tickets
+export default TicketsCs

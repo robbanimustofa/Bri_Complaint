@@ -3,18 +3,18 @@ import LoginCustomer from "./page/LoginCustomer";
 import LoginCustomerService from "./page/LoginCustomerService";
 import LoginSupervisor from "./page/LoginSupervisor";
 import SignupCustomer from "./page/SignupCustomer";
-import DashboardSpv from "./page/spv/Dashboard_Spv";
-import DashboardCustomerService from "./page/customer_service/DashboardCustomerService";
-import InitTicket from './page/customer/InitTicket';
+import DashboardSpv from "./page/spv/dashboard_spv/DashboardSpv";
+import DashboardCs from "./page/customer_service/dashboard_cs/DashboardCs";
+import InitTicket from './page/customer/dashboard_customer/InitTicket';
 import background from './background.jpg';
-import DashboardCustomer from './page/customer/DashboardCustomer';
+import DashboardCustomer from './page/customer/dashboard_customer/DashboardCustomer';
 import FooterWeb from "./component/Footer";
-import AddCSAccount from './page/AddCSAccount';
-import ReplyFormSpv from './page/spv/ReplyForm';
-import ReplyForm from './page/customer_service/ReplyForm';
-import CsList from './page/spv/CsList';
-import MyTicketCs from './page/customer_service/MyTicketCs';
-import MyTicketSpv from './page/spv/MyTicketSpv';
+import AddCSAccount from './page/spv/cs_list/AddCsAccount';
+import ReplyFormSpv from './page/spv/my_ticket/ReplyForm';
+import ReplyForm from './page/customer_service/my_ticket/ReplyForm';
+import CsList from './page/spv/cs_list/CsList';
+import MyTicketCs from './page/customer_service/my_ticket/MyTicketCs';
+import MyTicketSpv from './page/spv/my_ticket/MyTicketSpv';
 import ForgotPassword from "./page/ForgotPassword";
 import "./App.css";
 import "./animate.css";
@@ -26,7 +26,7 @@ function App() {
         <BrowserRouter>
             {/*<Navbar/>*/}
             <div className="padding-lr-20 body background"
-                 style={{backgroundImage: `url(${background})`, backgroundSize: "cover"}}>
+                style={{backgroundImage: `url(${background})`, backgroundSize: "cover"}}>
                 {/* <AddCSAccount /> */}
                 <Fragment>
                     <Route path="/" component={LoginCustomer} exact/>
@@ -34,7 +34,7 @@ function App() {
                     <Route path="/loginspv" component={LoginSupervisor} exact/>
                     <Route path="/signupcustomer" component={SignupCustomer} exact/>
                     <Route path="/dashboardspv" component={DashboardSpv} exact/>
-                    <Route path="/dashboardcs" component={DashboardCustomerService} exact/>
+                    <Route path="/dashboardcs" component={DashboardCs} exact/>
                     <Route path="/dashboardcustomer" component={DashboardCustomer} exact/>
                     <Route path="/createticket" component={InitTicket} exact/>
                     <Route path="/addcsaccount" component={AddCSAccount} exact/>

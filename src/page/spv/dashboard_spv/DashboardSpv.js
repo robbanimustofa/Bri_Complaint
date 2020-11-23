@@ -1,9 +1,9 @@
 import React from "react";
 import {Button} from "react-bootstrap";
-import NavbarSpv from "./NavbarSpv"
+import NavbarSpv from "../NavbarSpv"
 import TicketListSpv from './TicketListSpv'
 
-function Dashboard_Spv() {
+function DashboardSpv() {
     return (
         <div className="">
             <NavbarSpv/>
@@ -17,4 +17,4 @@ function Dashboard_Spv() {
     );
 }
 
-export default Dashboard_Spv;
+export default DashboardSpv;

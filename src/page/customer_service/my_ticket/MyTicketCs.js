@@ -1,19 +1,19 @@
 import React from 'react'
 import { Button, Table } from "react-bootstrap";
-import NavbarSpv from "./NavbarSpv"
+import NavbarCustomerService from "../NavbarCustomerService"
 
-const MyTicketSpv = () => {
+const MyTicketCS = () => {
     return (
         <div>
-            <NavbarSpv />
+            <NavbarCustomerService/>
             <div>
-                <Table>
+            <Table>
                     <thead>
                         <tr>
                             <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Date</th>
-                            <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Ticket Id</th>
-                            <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Title</th>
-                            <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Status</th>
+                            <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white"}}>Ticket Id</th>
+                            <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white"}}>Title</th>
+                            <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white"}}>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,4 +34,4 @@ const MyTicketSpv = () => {
     )
 }
 
-export default MyTicketSpv;
+export default MyTicketCS;

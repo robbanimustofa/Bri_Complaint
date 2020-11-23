@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import TicketsSpv from './TicketsSpv'
-import Pagination from './Pagination'
+import Tickets from './TicketsCs'
+import Pagination from '../Pagination'
 
 
-class TicketListSpv extends Component {
+class TicketListCs extends Component {
 
 
     state = {
@@ -15,7 +15,7 @@ class TicketListSpv extends Component {
     }
 
     fetchTicket = async () => {
-        const apiURL = "https://f4d7eb9f0cc9.ngrok.io/api/spv/tickets/lists/escalated";
+        const apiURL = "https://882a64c378f3.ngrok.io/api/cs/tickets/lists/unread";
         const response = await axios.get(apiURL, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))
@@ -25,13 +25,13 @@ class TicketListSpv extends Component {
         this.setState({
             tickets: response.data
         })
-
+    
         this.setState({
             loading: false
         })
     }
 
-    componentDidMount = () => {
+    componentDidMount = () =>  {
         this.fetchTicket()
     }
 
@@ -57,13 +57,13 @@ class TicketListSpv extends Component {
             currentPage: currentPage - 1
         })
 
-        return (
+        return(
             <div>
-                <TicketsSpv tickets={currentTickets} loading={loading} />
-                <Pagination ticketsPerPage={ticketsPerPage} totalTickets={tickets.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
+                <Tickets tickets={currentTickets} loading={loading} /> 
+                <Pagination ticketsPerPage={ticketsPerPage} totalTickets={tickets.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage}/>
             </div>
         )
     }
 }
 
-export default TicketListSpv
+export default TicketListCs
