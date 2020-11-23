@@ -16,6 +16,7 @@ import CsList from './page/spv/cs_list/CsList';
 import MyTicketCs from './page/customer_service/my_ticket/MyTicketCs';
 import MyTicketSpv from './page/spv/my_ticket/MyTicketSpv';
 import ForgotPassword from "./page/ForgotPassword";
+import DetailCS from "./page/spv/cs_list/DetailCS"
 import "./App.css";
 import "./animate.css";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -44,6 +45,7 @@ function App() {
                     <Route path="/myticketspv" component={MyTicketSpv} exact/>
                     <Route path="/cslist" component={CsList} exact/>
                     <Route path="/forgotpass" component={ForgotPassword} exact/>
+                    <Route path="/detailcs" component={DetailCS} exact/>
                 </Fragment>
             </div>
             <FooterWeb/>
