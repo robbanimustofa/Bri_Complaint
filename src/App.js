@@ -25,8 +25,7 @@ function App() {
     return (
         <BrowserRouter>
             {/*<Navbar/>*/}
-            <div className="padding-lr-20 body background"
-                style={{backgroundImage: `url(${background})`, backgroundSize: "cover"}}>
+            <div className="padding-lr-20 body background">
                 {/* <AddCSAccount /> */}
                 <Fragment>
                     <Route path="/" component={LoginCustomer} exact/>
