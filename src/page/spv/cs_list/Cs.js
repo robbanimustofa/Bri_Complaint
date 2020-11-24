@@ -6,7 +6,7 @@ import {withRouter} from "react-router-dom";
 const Cs = ({history, tickets, loading}) => {
 
     const handleDelete = (id) => {
-        axios.delete(`https://785e40a7b3e4.ngrok.io/api/spv/cs-delete/${id}`, {
+        axios.delete(`http://107.20.76.132:8001/api/spv/cs-delete/${id}`, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))
             }
