@@ -26,7 +26,7 @@ const LoginCustomerService = ({ history }) => {
       email: email,
       password: password,
     };
-    axios.post("https://17c2d6188906.ngrok.io/api/cs/login", loginData)
+    axios.post("http://107.20.76.132:8001/api/cs/login", loginData)
       .then(res => {
         if (res.status === 200) {
           localStorage.setItem('token', JSON.stringify(res.data.token));

@@ -1,12 +1,19 @@
 import React from 'react'
 import { Table } from "react-bootstrap";
-// import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
+// import ReplyFormCs from './ReplyFormCs'
 
-const MyTicketTableSpv = ({tickets, loading}) => {
+const MyTicketTableSpv = ({ history, tickets, loading }) => {
+
 
     const handleClick = (id) => {
-        console.log(id)
+        history.push(`/replyformspv${id}`)
     }
+
+
+    // useEffect(() => {
+    //     history.push("/replyformcs")
+    // }, [history])
 
     if (loading) {
         return <h2>Loading...</h2>
@@ -14,18 +21,18 @@ const MyTicketTableSpv = ({tickets, loading}) => {
 
     const ticketList = tickets && tickets.map((ticket, index) => {
         return (
-            <tr key={index} onClick={handleClick(ticket.ticket_id)}>
+            <tr key={index} onClick={() => { handleClick(ticket._id) }}>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.createdAt}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.ticket_id}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.complaint_name}</td>
-                <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.tag}<a className="ml-5" href="/">details</a></td>
+                <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.tag}</td>
             </tr>
         )
     })
 
     return (
         <div>
-            <Table className="table-hover">
+            <Table className="table-hover" style={{ cursor: "pointer" }}>
                 <thead>
                     <tr>
                         <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Date</th>
@@ -40,6 +47,7 @@ const MyTicketTableSpv = ({tickets, loading}) => {
             </Table>
         </div>
     )
+
 }
 
-export default MyTicketTableSpv
+export default withRouter(MyTicketTableSpv)

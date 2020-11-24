@@ -7,7 +7,7 @@ const MyTicketTableCs = ({history, tickets, loading}) => {
 
 
     const handleClick = (id) => {
-        history.push(`/replyformCs${id}`)
+        history.push(`/replyformcs${id}`)
     }
     
 

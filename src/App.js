@@ -40,7 +40,7 @@ function App() {
                     <Route path="/createticket" component={InitTicket} exact/>
                     <Route path="/addcsaccount" component={AddCSAccount} exact/>
                     <Route path="/replyformcs:id" component={ReplyFormCs} exact/>
-                    <Route path="/replyformspv" component={ReplyFormSpv} exact/>
+                    <Route path="/replyformspv:id" component={ReplyFormSpv} exact/>
                     <Route path="/myticketcs" component={MyTicketCs} exact/>
                     <Route path="/myticketspv" component={MyTicketSpv} exact/>
                     <Route path="/cslist" component={CsList} exact/>
