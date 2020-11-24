@@ -1,9 +1,5 @@
 import axios from 'axios';
-<<<<<<< HEAD
-import React, {useState} from 'react'
-=======
 import React, { useEffect, useState } from 'react'
->>>>>>> 064c8e65b42258ee4382850dad03a8d6de93b5d2
 import { Form, Button } from 'react-bootstrap'
 import { Table } from 'react-bootstrap'
 import { Link, useParams, withRouter } from "react-router-dom";
