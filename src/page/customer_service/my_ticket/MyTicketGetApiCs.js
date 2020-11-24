@@ -15,7 +15,7 @@ class MyTicketGetApiCs extends Component {
     }
 
     fetchTicket = async () => {
-        const apiURL = "https://785e40a7b3e4.ngrok.io/api/cs/tickets/lists/my-ticket";
+        const apiURL = "http://107.20.76.132:8001/api/cs/tickets/lists/my-ticket";
         const response = await axios.get(apiURL, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))
