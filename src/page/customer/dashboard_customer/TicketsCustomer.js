@@ -52,6 +52,7 @@ const TicketsCustomer = ({ tickets, loading }) => {
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.createdAt}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.ticket_id}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.complaint_name}</td>
+                <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.reply}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}><span>{ticket.tag}</span><span>----</span><span>{ticket.assigned_to}</span></td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>
                     <Button className="btn btn-danger" onClick={() => { handleClosed(ticket._id) }}>
@@ -75,6 +76,7 @@ const TicketsCustomer = ({ tickets, loading }) => {
                     <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Ticket Id</th>
                     <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Title</th>
                     <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Status</th>
+                    <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Reply</th>
                     <th style={{ backgroundColor: "black", borderRadius: "50px", color: "white", textAlign: "center", border: "solid 10px white" }}>Action</th>
                 </tr>
                 </thead>

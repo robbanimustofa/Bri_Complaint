@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/page/customer/TicketDoneCustomer/TicketDoneCustomer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/customer/TicketDoneCustomer/TicketDoneGetApiCustomer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/customer/TicketDoneCustomer/TicketDoneTableCustomer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/ModalTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomerService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/SignupCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/SignupCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/DashboardCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/DashboardCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/NavbarCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/NavbarCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/DashboardCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/DashboardCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/InitTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/InitTicket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketListCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketListCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketsCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketsCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer_service/dashboard_cs/TicketListCs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer_service/dashboard_cs/TicketListCs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer_service/my_ticket/MyTicketGetApiCs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer_service/my_ticket/MyTicketGetApiCs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/spv/cs_list/Cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/cs_list/Cs.js" afterDir="false" />
-    </list>
+    <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
