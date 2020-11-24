@@ -12,9 +12,9 @@ const InitTicket = ({ history }) => {
     const [tittle, setTittle] = useState("");
     const [category, setCategory] = useState("Komplain layanan");
     const [detail, setDetail] = useState("");
-    const [screenshot, setScreenshot] = useState("htpp://drive.google.com/image.jpg");
+    const [screenshot, setScreenshot] = useState("");
     const [urlVideo, setUrlVideo] = useState("");
-    const [file, setFile] = useState([])
+    // const [file, setFile] = useState([])
 
     const submitHandle = (e) => {
         e.preventDefault();
@@ -97,8 +97,9 @@ const InitTicket = ({ history }) => {
                     {/* <Form.File id="formcheck-api-regular"> */}
                     <Form.Label>Screenshot</Form.Label>
                     <Form.Control
-                        type="file"
-                        onChange={(e) => setFile([...file, e.target.files[0]])}
+                        value={screenshot}
+                        type="text"
+                        onChange={(e) => setScreenshot(e.target.value)}
                     />
                     {/* <Form.File.Label>Screenshot</Form.File.Label>
                         <Form.File.Input

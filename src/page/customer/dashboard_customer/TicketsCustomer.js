@@ -52,8 +52,8 @@ const TicketsCustomer = ({ tickets, loading }) => {
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.createdAt}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.ticket_id}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.complaint_name}</td>
-                <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.reply}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}><span>{ticket.tag}</span><span>----</span><span>{ticket.assigned_to}</span></td>
+                <td style={{ textAlign: "center", border: "solid 10px white" }}>{ticket.reply}</td>
                 <td style={{ textAlign: "center", border: "solid 10px white" }}>
                     <Button className="btn btn-danger" onClick={() => { handleClosed(ticket._id) }}>
                         CLOSED
