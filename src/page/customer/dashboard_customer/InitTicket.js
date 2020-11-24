@@ -32,7 +32,7 @@ const InitTicket = ({ history }) => {
             url_video: urlVideo
         };
         // if (res.status === 200) {
-        axios.post("https://3671b2ca5014.ngrok.io/api/customer/tickets/init-ticket", ticketData,
+        axios.post("http://107.20.76.132:8001/api/customer/tickets/init-ticket", ticketData,
             {
                 headers: {
                     "x-access-token": JSON.parse(localStorage.getItem('token'))

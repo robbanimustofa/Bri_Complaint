@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5b5b75a-a318-4678-b4dc-cbd364cdefbb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/page/customer/TicketDoneCustomer/TicketDoneCustomer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/customer/TicketDoneCustomer/TicketDoneGetApiCustomer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/customer/TicketDoneCustomer/TicketDoneTableCustomer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/ModalTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/customer_service/dashboard_cs/TicketsCs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer_service/dashboard_cs/TicketsCs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/LoginCustomerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/LoginCustomerService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/SignupCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/SignupCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer/DashboardCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/DashboardCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer/NavbarCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/NavbarCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/DashboardCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/DashboardCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/InitTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/InitTicket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketListCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketListCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketsCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer/dashboard_customer/TicketsCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer_service/dashboard_cs/TicketListCs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer_service/dashboard_cs/TicketListCs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/customer_service/my_ticket/MyTicketGetApiCs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/customer_service/my_ticket/MyTicketGetApiCs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/spv/cs_list/Cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/spv/cs_list/Cs.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="robbani-newbranch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +66,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.2.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Project React\bri_complain\src\page\customer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -83,6 +106,7 @@
       <workItem from="1605889998402" duration="474000" />
       <workItem from="1605940509956" duration="4095000" />
       <workItem from="1605967154318" duration="3871000" />
+      <workItem from="1606184951802" duration="16267000" />
     </task>
     <task id="LOCAL-00001" summary="edit app.js dan navbar,js sisa semalam">
       <created>1605769061210</created>

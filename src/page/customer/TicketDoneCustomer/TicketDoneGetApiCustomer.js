@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import MyTicketTableCs from './MyTicketTableCs'
-import Pagination from '../Pagination'
+import TicketDoneTableCustomer from './TicketDoneTableCustomer'
+import Pagination from '../../customer_service/Pagination'
 
 
-class MyTicketGetApiCs extends Component {
+class TicketDoneGetApiCustomer extends Component {
 
 
     state = {
@@ -15,7 +15,8 @@ class MyTicketGetApiCs extends Component {
     }
 
     fetchTicket = async () => {
-        const apiURL = "https://17c2d6188906.ngrok.io/api/cs/tickets/lists/my-ticket";
+        const apiURL = "http://107.20.76.132:8001/api/customer/tickets/history";
+
         const response = await axios.get(apiURL, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))
@@ -59,11 +60,11 @@ class MyTicketGetApiCs extends Component {
 
         return (
             <div>
-                <MyTicketTableCs tickets={currentTickets} loading={loading} />
+                <TicketDoneTableCustomer tickets={currentTickets} loading={loading} />
                 <Pagination ticketsPerPage={ticketsPerPage} totalTickets={tickets.length} paginate={paginate} nextPage={nextPage} prevPage={prevPage} />
             </div>
         )
     }
 }
 
-export default MyTicketGetApiCs
+export default TicketDoneGetApiCustomer

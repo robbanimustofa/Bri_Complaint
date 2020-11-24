@@ -10,7 +10,7 @@ class DashboardCustomer extends Component {
     };
     render() {
         return(
-            <div style={{margin:"50px"}}>
+            <div>
                 <NavbarCustomer/>
                 <Link style={this.linkStyle} to='/createticket'>
                     <button className="btn btn-primary">Create New Ticket</button>

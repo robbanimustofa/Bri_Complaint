@@ -13,6 +13,7 @@ import ReplyFormSpv from './page/spv/my_ticket/ReplyFormSpv';
 import ReplyFormCs from './page/customer_service/my_ticket/ReplyFormCs';
 import CsList from './page/spv/cs_list/CsList';
 import MyTicketCs from './page/customer_service/my_ticket/MyTicketCs';
+import TicketDoneCustomer from "./page/customer/TicketDoneCustomer/TicketDoneCustomer";
 import MyTicketSpv from './page/spv/my_ticket/MyTicketSpv';
 import ForgotPassword from "./page/ForgotPassword";
 import "./App.css";
@@ -39,6 +40,7 @@ function App() {
                     <Route path="/replyformcs:id" component={ReplyFormCs} exact/>
                     <Route path="/replyformspv" component={ReplyFormSpv} exact/>
                     <Route path="/myticketcs" component={MyTicketCs} exact/>
+                    <Route path="/ticketdone" component={TicketDoneCustomer} exact/>
                     <Route path="/myticketspv" component={MyTicketSpv} exact/>
                     <Route path="/cslist" component={CsList} exact/>
                     <Route path="/forgotpass" component={ForgotPassword} exact/>
