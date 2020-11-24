@@ -23,11 +23,12 @@ const ReplyFormSpv = ({history}) => {
         setTicket(response.data)
     }
 
-    const handleSubmit = async (e, id) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const data = {
             reply: reply
         }
+
         const ApiURL = `http://107.20.76.132:8001/api/spv/tickets/${id}/reply`
         const response = await axios.put(ApiURL, data, {
             headers: {
@@ -36,8 +37,7 @@ const ReplyFormSpv = ({history}) => {
         })
 
         setReply(response.data)
-        console.log(data)
-        // history.push('/myticketspv')
+        history.push('./myticketspv')
     }
 
     useEffect(() => {
@@ -81,7 +81,8 @@ const ReplyFormSpv = ({history}) => {
             <Form>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Reply</Form.Label>
-                    <Form.Control 
+                    <Form.Control
+                        onChange={(e) => setReply(e.target.value)} 
                         required
                         as="textarea" rows={3} />
                 </Form.Group>
@@ -94,7 +95,7 @@ const ReplyFormSpv = ({history}) => {
                             </Button>
                         </Link>
 
-                        <Button onClick={() => {handleSubmit(ticket._id)}} className="justify-content-end btn-success" variant="primary" type="submit">
+                        <Button onClick={handleSubmit} className="justify-content-end btn-success" variant="primary" type="submit">
                             Submit
                         </Button>
                     </div>
