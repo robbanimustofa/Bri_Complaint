@@ -9,6 +9,7 @@ const ReplyFormCs = ({history}) => {
     const { id } = useParams()
 
     const [ticket, setTicket] = useState(null)
+    const [reply, setReply] = useState("")
 
     const fetchData = async () => {
         const ApiURL = `http://107.20.76.132:8001/api/cs/tickets/ticket_id/get-ticket?ticket_id=${id}`
@@ -20,6 +21,23 @@ const ReplyFormCs = ({history}) => {
         
         console.log(response.data)
         setTicket(response.data)
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const data = {
+            reply: reply
+        }
+
+        const ApiURL = `http://107.20.76.132:8001/api/cs/tickets/${id}/reply`
+        const response = await axios.put(ApiURL, data, {
+            headers: {
+                "x-access-token": JSON.parse(localStorage.getItem('token'))
+            }
+        })
+
+        setReply(response.data)
+        history.push('./myticketcs')
     }
 
     const handleEscalated = async (id) => {
@@ -75,7 +93,7 @@ const ReplyFormCs = ({history}) => {
             <Form>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Reply</Form.Label>
-                    <Form.Control as="textarea" rows={3} required />
+                    <Form.Control onChange={(e) => setReply(e.target.value)} as="textarea" rows={3} required />
                 </Form.Group>
 
                 <div className="d-flex justify-content-between">
@@ -91,7 +109,7 @@ const ReplyFormCs = ({history}) => {
                             </Button>
                         </Link>
 
-                        <Button className="justify-content-end btn-success" variant="primary" type="submit">
+                        <Button onClick={handleSubmit} className="justify-content-end btn-success" variant="primary" type="submit">
                             Submit
                         </Button>
                     </div> 
