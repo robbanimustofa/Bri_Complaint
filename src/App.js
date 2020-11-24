@@ -16,6 +16,7 @@ import MyTicketCs from './page/customer_service/my_ticket/MyTicketCs';
 import TicketDoneCustomer from "./page/customer/TicketDoneCustomer/TicketDoneCustomer";
 import MyTicketSpv from './page/spv/my_ticket/MyTicketSpv';
 import ForgotPassword from "./page/ForgotPassword";
+import DetailCS from "./page/spv/cs_list/DetailCS"
 import "./App.css";
 import "./animate.css";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -38,12 +39,13 @@ function App() {
                     <Route path="/createticket" component={InitTicket} exact/>
                     <Route path="/addcsaccount" component={AddCSAccount} exact/>
                     <Route path="/replyformcs:id" component={ReplyFormCs} exact/>
-                    <Route path="/replyformspv" component={ReplyFormSpv} exact/>
+                    <Route path="/replyformspv:id" component={ReplyFormSpv} exact/>
                     <Route path="/myticketcs" component={MyTicketCs} exact/>
                     <Route path="/ticketdone" component={TicketDoneCustomer} exact/>
                     <Route path="/myticketspv" component={MyTicketSpv} exact/>
                     <Route path="/cslist" component={CsList} exact/>
                     <Route path="/forgotpass" component={ForgotPassword} exact/>
+                    <Route path="/detailcs" component={DetailCS} exact/>
                 </Fragment>
             </div>
             <FooterWeb/>

@@ -6,7 +6,6 @@ import Pagination from '../Pagination'
 
 class MyTicketGetApiCs extends Component {
 
-
     state = {
         tickets: [],
         loading: false,
@@ -15,7 +14,7 @@ class MyTicketGetApiCs extends Component {
     }
 
     fetchTicket = async () => {
-        const apiURL = "https://17c2d6188906.ngrok.io/api/cs/tickets/lists/my-ticket";
+        const apiURL = "http://107.20.76.132:8001/api/cs/tickets/lists/my-ticket";
         const response = await axios.get(apiURL, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))

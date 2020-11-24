@@ -1,30 +1,44 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { Table } from 'react-bootstrap'
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, withRouter } from "react-router-dom";
 
-const ReplyFormCs = () => {
+const ReplyFormCs = ({history}) => {
     
     const { id } = useParams()
 
+    const [ticket, setTicket] = useState(null)
+
     const fetchData = async () => {
-        const ApiURL = `https://785e40a7b3e4.ngrok.io/api/cs/tickets/ticket_id/get-ticket?ticket_id=${id}`
-        const response = await axios.put(ApiURL, {
+        const ApiURL = `http://107.20.76.132:8001/api/cs/tickets/ticket_id/get-ticket?ticket_id=${id}`
+        const response = await axios.put(ApiURL, ticket, {
+            headers: {
+                "x-access-token": JSON.parse(localStorage.getItem('token'))
+            }
+        })
+        
+        console.log(response.data)
+        setTicket(response.data)
+    }
+
+    const handleEscalated = async (id) => {
+        const ApiURL = `http://107.20.76.132:8001/api/cs/tickets/ticket_id/update-tag?ticket_id=${id}&tag=escalated`
+        const response = await axios.put(ApiURL, ticket, {
             headers: {
                 "x-access-token": JSON.parse(localStorage.getItem('token'))
             }
         })
 
-        return response.data
+        setTicket(response.data)
+        history.push('/myticketcs')
     }
 
-    // const handleEscalate = async () => {
-    //     const response = await axios.put(`https://785e40a7b3e4.ngrok.io/api/cs/tickets/ticket_id/update-tag?ticket_id=${id}&tag=escalated`)
-    //     return response.data
-    // }
-
-    const ticket = fetchData()
+    useEffect(() => {
+        fetchData()
+    }, [id])
+    
+    
     
     return(
 
@@ -34,27 +48,27 @@ const ReplyFormCs = () => {
                     <tr className="row mb-5">
                         <td className="col-sm-3">Title</td>
                         <td className="col-sm-1">:</td>
-                        <td className="col-sm-8 bg-light">{ticket.complaint_name}</td>
+                        <td className="col-sm-8 bg-light">{ticket && ticket.complaint_name}</td>
                     </tr>
                     <tr className="row mb-5">
                         <td className="col-sm-3">Category</td>
                         <td className="col-sm-1">:</td>
-                        <td className="col-sm-8 bg-light">{}</td>
+                        <td className="col-sm-8 bg-light">{ticket && ticket.category.name}</td>
                     </tr>
                     <tr className="row mb-5">
                         <td className="col-sm-3">Detail issue</td>
                         <td className="col-sm-1">:</td>
-                        <td className="col-sm-8 bg-light text-justify">{ticket.description}</td>
+                        <td className="col-sm-8 bg-light text-justify">{ticket && ticket.description}</td>
                     </tr>
                     <tr className="row mb-5">
                         <td className="col-sm-3">Screenshot</td>
                         <td className="col-sm-1">:</td>
-                        <td className="col-sm-8 bg-light">{ticket.screenshot}</td>
+                        <td className="col-sm-8 bg-light"><a target="_blank" href={ticket && ticket.screenshot}>{ticket && ticket.screenshot}</a></td>
                     </tr>
                     <tr className="row mb-5">
                         <td className="col-sm-3">URL Video</td>
                         <td className="col-sm-1">:</td>
-                        <td className="col-sm-8 bg-light">{ticket.url_video}</td>
+                        <td className="col-sm-8 bg-light"><a target="blank" href={ticket && ticket.url_video}>{ticket && ticket.url_video}</a></td>
                     </tr>
                 </tbody>
             </Table>
@@ -66,7 +80,7 @@ const ReplyFormCs = () => {
 
                 <div className="d-flex justify-content-between">
                     <div>
-                        <Button className="justify-content-end btn-warning" variant="primary" type="submit">
+                        <Button onClick={()=> {handleEscalated(ticket._id)}} className="justify-content-end btn-warning" variant="primary" type="submit">
                             Escalated
                         </Button>
                     </div>
@@ -88,4 +102,4 @@ const ReplyFormCs = () => {
     
 }
 
-export default ReplyFormCs
+export default withRouter(ReplyFormCs)
